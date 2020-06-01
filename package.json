@@ -6,7 +6,7 @@
   "author": "dannyvassallo <danielvassallo87@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "generate-graphdoc": "mkdir tmp && ./node_modules/.bin/graphdoc -e http://dashboard.vydia.com/api/graphql/v1 -o ./tmp && cp -a ./tmp. ./ && rm -r tmp"
+    "generate-graphdoc": "rm -rf tmp && ./node_modules/.bin/graphdoc -e https://dashboard.vydia.com/api/graphql/v1 -o ./tmp && cp -a tmp/. ./ && rm -rf tmp"
   },
   "devDependencies": {
     "@2fd/graphdoc": "^2.4.0"
