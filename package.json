@@ -1,0 +1,14 @@
+{
+  "name": "vydia-graphdoc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Vydia/vydia-graphdoc.git",
+  "author": "dannyvassallo <danielvassallo87@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "generate-graphdoc": "mkdir tmp && ./node_modules/.bin/graphdoc -e http://dashboard.vydia.com/api/graphql/v1 -o ./tmp && cp -a ./tmp. ./ && rm -r tmp"
+  },
+  "devDependencies": {
+    "@2fd/graphdoc": "^2.4.0"
+  }
+}
