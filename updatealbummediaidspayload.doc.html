@@ -195,11 +195,6 @@
                 InvalidMediaReason
             </a>
         </li>
-        <li  title="MediaCidClaimType">
-            <a href="mediacidclaimtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                MediaCidClaimType
-            </a>
-        </li>
         <li  title="MediaCidConflictClaimsSortBy">
             <a href="mediacidconflictclaimssortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaCidConflictClaimsSortBy
@@ -1005,16 +1000,6 @@
                 Media
             </a>
         </li>
-        <li  title="MediaCidClaim">
-            <a href="mediacidclaim.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                MediaCidClaim
-            </a>
-        </li>
-        <li  title="MediaCidClaims">
-            <a href="mediacidclaims.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                MediaCidClaims
-            </a>
-        </li>
         <li  title="MediaCidConflictClaim">
             <a href="mediacidconflictclaim.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaCidConflictClaim
@@ -1500,6 +1485,11 @@
                 TopAlbum
             </a>
         </li>
+        <li  title="TopAlbumMedia">
+            <a href="topalbummedia.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopAlbumMedia
+            </a>
+        </li>
         <li  title="TopArtist">
             <a href="topartist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 TopArtist
@@ -1843,6 +1833,11 @@
         <li  title="ArtistObject">
             <a href="artistobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ArtistObject
+            </a>
+        </li>
+        <li  title="ArtistsCursorInput">
+            <a href="artistscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ArtistsCursorInput
             </a>
         </li>
         <li  title="AssetRevenuesCursorInput">
@@ -2235,6 +2230,11 @@
                 SplitObject
             </a>
         </li>
+        <li  title="TopAlbumMediasCursorInput">
+            <a href="topalbummediascursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopAlbumMediasCursorInput
+            </a>
+        </li>
         <li  title="TopAlbumsCursorInput">
             <a href="topalbumscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 TopAlbumsCursorInput
@@ -2340,6 +2340,11 @@
                 UpgradeArtistsInput
             </a>
         </li>
+        <li  title="UsersCursorInput">
+            <a href="userscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorInput
+            </a>
+        </li>
         <li  title="WebRightObject">
             <a href="webrightobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 WebRightObject
@@ -2394,7 +2399,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">UpdateAlbumMediaIdsPayload</span> {</li><li></li><li><span class="tab"><span class="meta">album</span>: <a class="support type" href="album.doc.html">Album</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   A unique identifier for the client performing the mutation.</span></span></li><li><span class="tab"><span class="meta">clientMutationId</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">current_observer</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="meta">current_user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="meta">errors</span>: [<a class="support type" href="usererror.doc.html">UserError</a>!] </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">UpdateAlbumMediaIdsPayload</span> {</li><li></li><li><span class="tab"><span class="meta">album</span>: <a class="support type" href="album.doc.html">Album</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   A unique identifier for the client performing the mutation.</span></span></li><li><span class="tab"><span class="meta">clientMutationId</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the authenticated session indicates that the main user is observing a </span></span></li><li><span class="tab"><span class="comment line">#   sub-user, the current_observer response object will contain the observer User </span></span></li><li><span class="tab"><span class="comment line">#   object.</span></span></li><li><span class="tab"><span class="meta">current_observer</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the request is authenticated, the current_user response object will contain </span></span></li><li><span class="tab"><span class="comment line">#   the authenticated User object.</span></span></li><li><span class="tab"><span class="meta">current_user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="meta">errors</span>: [<a class="support type" href="usererror.doc.html">UserError</a>!] </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
