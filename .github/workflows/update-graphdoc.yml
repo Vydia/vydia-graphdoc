@@ -2,7 +2,7 @@ name: Generate and Update Graphdoc
 on:
   push:
     branches:
-      - ^(update-graphdoc\/.*)$
+      - '^(update-graphdoc\/.*)$'
 jobs:
   update:
     runs-on: ubuntu-latest
