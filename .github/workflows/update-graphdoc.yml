@@ -1,6 +1,6 @@
 name: Generate and Update Graphdoc
 on:
-  push:
+  create:
     branches:
       - '^(update-graphdoc\/.*)$'
 jobs:
