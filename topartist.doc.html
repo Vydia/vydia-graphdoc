@@ -245,6 +245,11 @@
                 NetworkType
             </a>
         </li>
+        <li  title="OrganizationUserRole">
+            <a href="organizationuserrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserRole
+            </a>
+        </li>
         <li  title="OwnershipPoliciesSection">
             <a href="ownershippoliciessection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OwnershipPoliciesSection
@@ -338,6 +343,16 @@
         <li  title="UploadType">
             <a href="uploadtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadType
+            </a>
+        </li>
+        <li  title="UserInviteStatus">
+            <a href="userinvitestatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInviteStatus
+            </a>
+        </li>
+        <li  title="UsersCursorSortBy">
+            <a href="userscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorSortBy
             </a>
         </li>
         <li  title="VideoCategory">
@@ -1340,6 +1355,11 @@
                 ResendPayeeInvitePayload
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationPayload">
+            <a href="resendwelcomeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationPayload
+            </a>
+        </li>
         <li  title="RevenueByMonth">
             <a href="revenuebymonth.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RevenueByMonth
@@ -2190,6 +2210,11 @@
                 ResendPayeeInviteInput
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationInput">
+            <a href="resendwelcomeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationInput
+            </a>
+        </li>
         <li  title="RightsObject">
             <a href="rightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RightsObject
@@ -2399,7 +2424,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">TopArtist</span> {</li><li></li><li><span class="tab"><span class="meta">artist</span>: <a class="support type" href="artist.doc.html">Artist</a>! </span></li><li></li><li><span class="tab"><span class="meta">client_downloads_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">client_gross_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">client_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">client_streams_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">downloads_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">downloads_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"changing to downloads_gross_revenue_cumulative" </span> )</span></li><li></li><li><span class="tab"><span class="meta">gross_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   revenue for networks </span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">network_revenues</span>(<span class="meta">input</span>: <a class="support type" href="networkrevenuescursorinput.doc.html">NetworkRevenuesCursorInput</a>): [<a class="support type" href="networkrevenue.doc.html">NetworkRevenue</a>!]! </span></li><li></li><li><span class="tab"><span class="meta">streams_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">streams_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"changing to streams_gross_revenue_cumulative" </span> )</span></li><li></li><li><span class="tab"><span class="meta">top_geocountry</span>: <a class="support type" href="geocountry.doc.html">Geocountry</a>! </span></li><li></li><li><span class="tab"><span class="meta">top_geocountry_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">top_media</span>: <a class="support type" href="media.doc.html">Media</a>! </span></li><li></li><li><span class="tab"><span class="meta">top_media_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">TopArtist</span> {</li><li></li><li><span class="tab"><span class="meta">artist</span>: <a class="support type" href="artist.doc.html">Artist</a>! </span></li><li></li><li><span class="tab"><span class="meta">client_downloads_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">client_gross_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">client_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">client_streams_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">downloads_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">downloads_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">gross_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   revenue for networks </span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">network_revenues</span>(<span class="meta">input</span>: <a class="support type" href="networkrevenuescursorinput.doc.html">NetworkRevenuesCursorInput</a>): [<a class="support type" href="networkrevenue.doc.html">NetworkRevenue</a>!]! </span></li><li></li><li><span class="tab"><span class="meta">streams_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">streams_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">top_geocountry</span>: <a class="support type" href="geocountry.doc.html">Geocountry</a>! </span></li><li></li><li><span class="tab"><span class="meta">top_geocountry_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">top_media</span>: <a class="support type" href="media.doc.html">Media</a>! </span></li><li></li><li><span class="tab"><span class="meta">top_media_net_revenue_cumulative</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

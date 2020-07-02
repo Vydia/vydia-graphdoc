@@ -245,6 +245,11 @@
                 NetworkType
             </a>
         </li>
+        <li  title="OrganizationUserRole">
+            <a href="organizationuserrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserRole
+            </a>
+        </li>
         <li  title="OwnershipPoliciesSection">
             <a href="ownershippoliciessection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OwnershipPoliciesSection
@@ -338,6 +343,16 @@
         <li  title="UploadType">
             <a href="uploadtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadType
+            </a>
+        </li>
+        <li  title="UserInviteStatus">
+            <a href="userinvitestatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInviteStatus
+            </a>
+        </li>
+        <li  title="UsersCursorSortBy">
+            <a href="userscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorSortBy
             </a>
         </li>
         <li  title="VideoCategory">
@@ -1340,6 +1355,11 @@
                 ResendPayeeInvitePayload
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationPayload">
+            <a href="resendwelcomeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationPayload
+            </a>
+        </li>
         <li  title="RevenueByMonth">
             <a href="revenuebymonth.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RevenueByMonth
@@ -2190,6 +2210,11 @@
                 ResendPayeeInviteInput
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationInput">
+            <a href="resendwelcomeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationInput
+            </a>
+        </li>
         <li  title="RightsObject">
             <a href="rightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RightsObject
@@ -2399,7 +2424,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Settings</span> {</li><li></li><li><span class="tab"><span class="comment line">#   url for how to create video description post</span></span></li><li><span class="tab"><span class="meta">effective_video_description_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"dynamic settings should be on branding object not settings object" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for the frequently asked questions page</span></span></li><li><span class="tab"><span class="meta">faq_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"dynamic settings should be on branding object not settings object" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   wordpress url for the learn more about policies post</span></span></li><li><span class="tab"><span class="meta">policies_learn_more_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"dynamic settings should be on branding object not settings object" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for privacy policy page</span></span></li><li><span class="tab"><span class="meta">privacy_policy_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"dynamic settings should be on branding object not settings object" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for the royalty center frequently asked questions page</span></span></li><li><span class="tab"><span class="meta">royalty_center_faq_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"dynamic settings should be on branding object not settings object" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for the customer support page</span></span></li><li><span class="tab"><span class="meta">support_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"dynamic settings should be on branding object not settings object" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for the terms of use page</span></span></li><li><span class="tab"><span class="meta">terms_of_use_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"dynamic settings should be on branding object not settings object" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for the tipalti faq page</span></span></li><li><span class="tab"><span class="meta">tipalti_faq_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"dynamic settings should be on branding object not settings object" </span> )</span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Settings</span> {</li><li></li><li><span class="tab"><span class="comment line">#   url for how to create video description post</span></span></li><li><span class="tab"><span class="meta">effective_video_description_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not cache safe, use fields on `Branding` object instead" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for the frequently asked questions page</span></span></li><li><span class="tab"><span class="meta">faq_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not cache safe, use fields on `Branding` object instead" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   wordpress url for the learn more about policies post</span></span></li><li><span class="tab"><span class="meta">policies_learn_more_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not cache safe, use fields on `Branding` object instead" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for privacy policy page</span></span></li><li><span class="tab"><span class="meta">privacy_policy_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not cache safe, use fields on `Branding` object instead" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for the royalty center frequently asked questions page</span></span></li><li><span class="tab"><span class="meta">royalty_center_faq_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not cache safe, use fields on `Branding` object instead" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for the customer support page</span></span></li><li><span class="tab"><span class="meta">support_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not cache safe, use fields on `Branding` object instead" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for the terms of use page</span></span></li><li><span class="tab"><span class="meta">terms_of_use_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not cache safe, use fields on `Branding` object instead" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   url for the tipalti faq page</span></span></li><li><span class="tab"><span class="meta">tipalti_faq_url</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not cache safe, use fields on `Branding` object instead" </span> )</span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

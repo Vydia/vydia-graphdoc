@@ -245,6 +245,11 @@
                 NetworkType
             </a>
         </li>
+        <li  title="OrganizationUserRole">
+            <a href="organizationuserrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserRole
+            </a>
+        </li>
         <li  title="OwnershipPoliciesSection">
             <a href="ownershippoliciessection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OwnershipPoliciesSection
@@ -338,6 +343,16 @@
         <li  title="UploadType">
             <a href="uploadtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadType
+            </a>
+        </li>
+        <li  title="UserInviteStatus">
+            <a href="userinvitestatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInviteStatus
+            </a>
+        </li>
+        <li  title="UsersCursorSortBy">
+            <a href="userscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorSortBy
             </a>
         </li>
         <li  title="VideoCategory">
@@ -1340,6 +1355,11 @@
                 ResendPayeeInvitePayload
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationPayload">
+            <a href="resendwelcomeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationPayload
+            </a>
+        </li>
         <li  title="RevenueByMonth">
             <a href="revenuebymonth.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RevenueByMonth
@@ -2190,6 +2210,11 @@
                 ResendPayeeInviteInput
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationInput">
+            <a href="resendwelcomeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationInput
+            </a>
+        </li>
         <li  title="RightsObject">
             <a href="rightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RightsObject
@@ -2399,7 +2424,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">SyncConfig</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Default Subcategory for Social Sync is music</span></span></li><li><span class="tab"><span class="meta">default_subcategory</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Social Sync for Facebook</span></span></li><li><span class="tab"><span class="meta">facebook_page_id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Checks if the user has full rights to syncing</span></span></li><li><span class="tab"><span class="meta">has_full_rights</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Social Sync for Instagram Business Account</span></span></li><li><span class="tab"><span class="meta">instagram_business_account_id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="meta">is_default_subcategory</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Flag for the user is syncing</span></span></li><li><span class="tab"><span class="meta">is_syncing</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Human readable default subcategory</span></span></li><li><span class="tab"><span class="meta">pretty_default_subcategory</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Flag for the subcategory is autofilled</span></span></li><li><span class="tab"><span class="meta">subcategory_autofilled</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Date at which the webhook expires</span></span></li><li><span class="tab"><span class="meta">webhook_lease_expires_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Social Sync for YouTube</span></span></li><li><span class="tab"><span class="meta">youtube_channel_id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">SyncConfig</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Default Subcategory for Social Sync is music</span></span></li><li><span class="tab"><span class="meta">default_subcategory</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Social Sync for Facebook</span></span></li><li><span class="tab"><span class="meta">facebook_page_id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Checks if the user has full rights to syncing</span></span></li><li><span class="tab"><span class="meta">has_full_rights</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Social Sync for Instagram Business Account</span></span></li><li><span class="tab"><span class="meta">instagram_business_account_id</span>: <a class="support type" href="id.doc.html">ID</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">is_default_subcategory</span>: <a class="support type" href="boolean.doc.html">Boolean</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   Flag for the user is syncing</span></span></li><li><span class="tab"><span class="meta">is_syncing</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Human readable default subcategory</span></span></li><li><span class="tab"><span class="meta">pretty_default_subcategory</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Flag for the subcategory is autofilled</span></span></li><li><span class="tab"><span class="meta">subcategory_autofilled</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   Date at which the webhook expires</span></span></li><li><span class="tab"><span class="meta">webhook_lease_expires_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   Social Sync for YouTube</span></span></li><li><span class="tab"><span class="meta">youtube_channel_id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

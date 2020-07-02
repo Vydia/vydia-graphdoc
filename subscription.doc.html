@@ -245,6 +245,11 @@
                 NetworkType
             </a>
         </li>
+        <li  title="OrganizationUserRole">
+            <a href="organizationuserrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserRole
+            </a>
+        </li>
         <li  title="OwnershipPoliciesSection">
             <a href="ownershippoliciessection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OwnershipPoliciesSection
@@ -338,6 +343,16 @@
         <li  title="UploadType">
             <a href="uploadtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadType
+            </a>
+        </li>
+        <li  title="UserInviteStatus">
+            <a href="userinvitestatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInviteStatus
+            </a>
+        </li>
+        <li  title="UsersCursorSortBy">
+            <a href="userscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorSortBy
             </a>
         </li>
         <li  title="VideoCategory">
@@ -1340,6 +1355,11 @@
                 ResendPayeeInvitePayload
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationPayload">
+            <a href="resendwelcomeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationPayload
+            </a>
+        </li>
         <li  title="RevenueByMonth">
             <a href="revenuebymonth.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RevenueByMonth
@@ -2190,6 +2210,11 @@
                 ResendPayeeInviteInput
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationInput">
+            <a href="resendwelcomeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationInput
+            </a>
+        </li>
         <li  title="RightsObject">
             <a href="rightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RightsObject
@@ -2399,7 +2424,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Subscription</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Vydia uses braintree as payment gateway for user purchases, and this is the ID </span></span></li><li><span class="tab"><span class="comment line">#   for this user</span></span></li><li><span class="tab"><span class="meta">braintree_id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">created_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="meta">credit_card_id</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">downgrade_requested_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="meta">downgrade_to_storage_tier</span>: <a class="support type" href="storagetier.doc.html">StorageTier</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   When the user downgrades to a storage tier, It is downgraded at the end of the </span></span></li><li><span class="tab"><span class="comment line">#   subscription. The storage it should downgrade to, is stored at this field</span></span></li><li><span class="tab"><span class="meta">downgrade_to_storage_tier_id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">paypal_account_id</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">pretty_created_at</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">pretty_payment_method</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">pretty_price</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Price of this subscription</span></span></li><li><span class="tab"><span class="meta">price</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Time when this subscription renews at</span></span></li><li><span class="tab"><span class="meta">renew_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Status of the subcription like Pending | Past Due | Active | Cancelled</span></span></li><li><span class="tab"><span class="meta">status</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">storage_tier</span>: <a class="support type" href="storagetier.doc.html">StorageTier</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Storage Tier ID the user is currently subscribed with</span></span></li><li><span class="tab"><span class="meta">storage_tier_id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   List of transactions made by the user</span></span></li><li><span class="tab"><span class="meta">transactions</span>: [<a class="support type" href="transaction.doc.html">Transaction</a>!]! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Subscription</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Vydia uses braintree as payment gateway for user purchases, and this is the ID </span></span></li><li><span class="tab"><span class="comment line">#   for this user</span></span></li><li><span class="tab"><span class="meta">braintree_id</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">created_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="meta">credit_card_id</span>: <a class="support type" href="int.doc.html">Int</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">downgrade_requested_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="meta">downgrade_to_storage_tier</span>: <a class="support type" href="storagetier.doc.html">StorageTier</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   When the user downgrades to a storage tier, It is downgraded at the end of the </span></span></li><li><span class="tab"><span class="comment line">#   subscription. The storage it should downgrade to, is stored at this field</span></span></li><li><span class="tab"><span class="meta">downgrade_to_storage_tier_id</span>: <a class="support type" href="id.doc.html">ID</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: foreign id fields are deprecated use `Subscription.downgrade_to_storage_tier.id` instead" </span> )</span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">paypal_account_id</span>: <a class="support type" href="int.doc.html">Int</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">pretty_created_at</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">pretty_payment_method</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is only used in legacy applications" </span> )</span></li><li></li><li><span class="tab"><span class="meta">pretty_price</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Price of this subscription</span></span></li><li><span class="tab"><span class="meta">price</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Time when this subscription renews at</span></span></li><li><span class="tab"><span class="meta">renew_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Status of the subcription like Pending | Past Due | Active | Cancelled</span></span></li><li><span class="tab"><span class="meta">status</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">storage_tier</span>: <a class="support type" href="storagetier.doc.html">StorageTier</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Storage Tier ID the user is currently subscribed with</span></span></li><li><span class="tab"><span class="meta">storage_tier_id</span>: <a class="support type" href="id.doc.html">ID</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: foreign id fields are deprecated use `Subscription.storage_tier.id` instead" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   List of transactions made by the user</span></span></li><li><span class="tab"><span class="meta">transactions</span>: [<a class="support type" href="transaction.doc.html">Transaction</a>!]! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

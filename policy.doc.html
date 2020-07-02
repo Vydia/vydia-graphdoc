@@ -245,6 +245,11 @@
                 NetworkType
             </a>
         </li>
+        <li  title="OrganizationUserRole">
+            <a href="organizationuserrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserRole
+            </a>
+        </li>
         <li  title="OwnershipPoliciesSection">
             <a href="ownershippoliciessection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OwnershipPoliciesSection
@@ -338,6 +343,16 @@
         <li  title="UploadType">
             <a href="uploadtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadType
+            </a>
+        </li>
+        <li  title="UserInviteStatus">
+            <a href="userinvitestatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInviteStatus
+            </a>
+        </li>
+        <li  title="UsersCursorSortBy">
+            <a href="userscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorSortBy
             </a>
         </li>
         <li  title="VideoCategory">
@@ -1340,6 +1355,11 @@
                 ResendPayeeInvitePayload
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationPayload">
+            <a href="resendwelcomeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationPayload
+            </a>
+        </li>
         <li  title="RevenueByMonth">
             <a href="revenuebymonth.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RevenueByMonth
@@ -2190,6 +2210,11 @@
                 ResendPayeeInviteInput
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationInput">
+            <a href="resendwelcomeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationInput
+            </a>
+        </li>
         <li  title="RightsObject">
             <a href="rightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RightsObject
@@ -2399,7 +2424,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Policy</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Creator that asserts this policy to a media</span></span></li><li><span class="tab"><span class="meta">artist_id</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">is_default</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Metadata associated with the polcy</span></span></li><li><span class="tab"><span class="meta">metadata_id</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">network</span>: <a class="support type" href="network.doc.html">Network</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Network associated with the polcy</span></span></li><li><span class="tab"><span class="meta">network_id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">release_confirmed</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Deployment status of the policy for this metadata policy</span></span></li><li><span class="tab"><span class="meta">status</span>: <a class="support type" href="mediapolicystatus.doc.html">MediaPolicyStatus</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Specifies the time when status update has happened</span></span></li><li><span class="tab"><span class="meta">status_changed_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"Use type_2 since it's an enum." </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   Values are permitted only to Permit | Monetize | Block</span></span></li><li><span class="tab"><span class="meta">type_2</span>: <a class="support type" href="mediapolicytype.doc.html">MediaPolicyType</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Policy</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Creator that asserts this policy to a media</span></span></li><li><span class="tab"><span class="meta">artist_id</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">is_default</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Metadata associated with the polcy</span></span></li><li><span class="tab"><span class="meta">metadata_id</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">network</span>: <a class="support type" href="network.doc.html">Network</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Network associated with the polcy</span></span></li><li><span class="tab"><span class="meta">network_id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">release_confirmed</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Deployment status of the policy for this metadata policy</span></span></li><li><span class="tab"><span class="meta">status</span>: <a class="support type" href="mediapolicystatus.doc.html">MediaPolicyStatus</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Specifies the time when status update has happened</span></span></li><li><span class="tab"><span class="meta">status_changed_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: non enum fields are deprecated use `Policy.type_2` instead" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   Values are permitted only to Permit | Monetize | Block</span></span></li><li><span class="tab"><span class="meta">type_2</span>: <a class="support type" href="mediapolicytype.doc.html">MediaPolicyType</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

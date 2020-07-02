@@ -245,6 +245,11 @@
                 NetworkType
             </a>
         </li>
+        <li  title="OrganizationUserRole">
+            <a href="organizationuserrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserRole
+            </a>
+        </li>
         <li  title="OwnershipPoliciesSection">
             <a href="ownershippoliciessection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OwnershipPoliciesSection
@@ -338,6 +343,16 @@
         <li  title="UploadType">
             <a href="uploadtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadType
+            </a>
+        </li>
+        <li  title="UserInviteStatus">
+            <a href="userinvitestatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInviteStatus
+            </a>
+        </li>
+        <li  title="UsersCursorSortBy">
+            <a href="userscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorSortBy
             </a>
         </li>
         <li  title="VideoCategory">
@@ -1340,6 +1355,11 @@
                 ResendPayeeInvitePayload
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationPayload">
+            <a href="resendwelcomeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationPayload
+            </a>
+        </li>
         <li  title="RevenueByMonth">
             <a href="revenuebymonth.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RevenueByMonth
@@ -2190,6 +2210,11 @@
                 ResendPayeeInviteInput
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationInput">
+            <a href="resendwelcomeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationInput
+            </a>
+        </li>
         <li  title="RightsObject">
             <a href="rightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RightsObject
@@ -2399,7 +2424,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Right</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Composer object for the right</span></span></li><li><span class="tab"><span class="meta">composer</span>: <a class="support type" href="composer.doc.html">Composer</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Flag for the restiction includes a region</span></span></li><li><span class="tab"><span class="meta">geo_include</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   List of country codes where the restrictions apply</span></span></li><li><span class="tab"><span class="meta">geo_restrictions</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Email of the composer who is invited to the platform</span></span></li><li><span class="tab"><span class="meta">holder_email</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Name of the composer who is invited to the platform</span></span></li><li><span class="tab"><span class="meta">holder_name</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   User object for the composer when they accept the invite</span></span></li><li><span class="tab"><span class="meta">holder_user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Unique identification string for the invitation</span></span></li><li><span class="tab"><span class="meta">invitation_token</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">invite_accepted_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="meta">invite_rejected_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Invitation sent to composer who are not in Vydia at</span></span></li><li><span class="tab"><span class="meta">invited_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Metadata identifier</span></span></li><li><span class="tab"><span class="meta">metadata_id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"Use type since it's an enum. Returns either Web | Music Video | Sound recording | Composition" </span> )</span></li><li></li><li><span class="tab"><span class="meta">owner_distributes_revenue</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   percentage of ownershoip owned by an artist that asserted this right</span></span></li><li><span class="tab"><span class="meta">ownership_percentage</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">perf_rights_org</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">publisher</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="righttype.doc.html">RightType</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Right</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Composer object for the right</span></span></li><li><span class="tab"><span class="meta">composer</span>: <a class="support type" href="composer.doc.html">Composer</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Flag for the restiction includes a region</span></span></li><li><span class="tab"><span class="meta">geo_include</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   List of country codes where the restrictions apply</span></span></li><li><span class="tab"><span class="meta">geo_restrictions</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Email of the composer who is invited to the platform</span></span></li><li><span class="tab"><span class="meta">holder_email</span>: <a class="support type" href="string.doc.html">String</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   Name of the composer who is invited to the platform</span></span></li><li><span class="tab"><span class="meta">holder_name</span>: <a class="support type" href="string.doc.html">String</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   User object for the composer when they accept the invite</span></span></li><li><span class="tab"><span class="meta">holder_user</span>: <a class="support type" href="user.doc.html">User</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Unique identification string for the invitation</span></span></li><li><span class="tab"><span class="meta">invitation_token</span>: <a class="support type" href="string.doc.html">String</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">invite_accepted_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">invite_rejected_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   Invitation sent to composer who are not in Vydia at</span></span></li><li><span class="tab"><span class="meta">invited_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Metadata identifier</span></span></li><li><span class="tab"><span class="meta">metadata_id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"Use type since it's an enum. Returns either Web | Music Video | Sound recording | Composition" </span> )</span></li><li></li><li><span class="tab"><span class="meta">owner_distributes_revenue</span>: <a class="support type" href="boolean.doc.html">Boolean</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   percentage of ownershoip owned by an artist that asserted this right</span></span></li><li><span class="tab"><span class="meta">ownership_percentage</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">perf_rights_org</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">publisher</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="righttype.doc.html">RightType</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

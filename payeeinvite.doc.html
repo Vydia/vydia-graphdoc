@@ -245,6 +245,11 @@
                 NetworkType
             </a>
         </li>
+        <li  title="OrganizationUserRole">
+            <a href="organizationuserrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserRole
+            </a>
+        </li>
         <li  title="OwnershipPoliciesSection">
             <a href="ownershippoliciessection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OwnershipPoliciesSection
@@ -338,6 +343,16 @@
         <li  title="UploadType">
             <a href="uploadtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadType
+            </a>
+        </li>
+        <li  title="UserInviteStatus">
+            <a href="userinvitestatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInviteStatus
+            </a>
+        </li>
+        <li  title="UsersCursorSortBy">
+            <a href="userscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorSortBy
             </a>
         </li>
         <li  title="VideoCategory">
@@ -1340,6 +1355,11 @@
                 ResendPayeeInvitePayload
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationPayload">
+            <a href="resendwelcomeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationPayload
+            </a>
+        </li>
         <li  title="RevenueByMonth">
             <a href="revenuebymonth.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RevenueByMonth
@@ -2190,6 +2210,11 @@
                 ResendPayeeInviteInput
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationInput">
+            <a href="resendwelcomeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationInput
+            </a>
+        </li>
         <li  title="RightsObject">
             <a href="rightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RightsObject
@@ -2399,7 +2424,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">PayeeInvite</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Time when the invite was archived</span></span></li><li><span class="tab"><span class="meta">archived_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Unique code generated for this record</span></span></li><li><span class="tab"><span class="meta">code</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Time when the invite was created</span></span></li><li><span class="tab"><span class="meta">created_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Payee email address</span></span></li><li><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Payee first name</span></span></li><li><span class="tab"><span class="meta">first_name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Payee last name</span></span></li><li><span class="tab"><span class="meta">last_name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The payee user</span></span></li><li><span class="tab"><span class="meta">payee</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Assets that the Payee has been invited to share revenue on. Cursor results are </span></span></li><li><span class="tab"><span class="comment line">#   of type Asset</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>status</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>asset_type</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">payee_assets_cursor</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">status</span>: <a class="support type" href="payeeassetsplitstatus.doc.html">PayeeAssetSplitStatus</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">asset_type</span>: <a class="support type" href="payeeassettype.doc.html">PayeeAssetType</a></span></span></li><li><span class="tab">): <a class="support type" href="payeeassets.doc.html">PayeeAssets</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The payor user</span></span></li><li><span class="tab"><span class="meta">payor</span>: <a class="support type" href="payor.doc.html">Payor</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Payee phone number</span></span></li><li><span class="tab"><span class="meta">phone_number</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">total_earnings</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Time when the invite was updated</span></span></li><li><span class="tab"><span class="meta">updated_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">PayeeInvite</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Time when the invite was archived</span></span></li><li><span class="tab"><span class="meta">archived_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Payee invite is or isnt for a charity</span></span></li><li><span class="tab"><span class="meta">charity</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The payee is a charity</span></span></li><li><span class="tab"><span class="meta">charity_invite</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Unique code generated for this record</span></span></li><li><span class="tab"><span class="meta">code</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Time when the invite was created</span></span></li><li><span class="tab"><span class="meta">created_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Payee email address</span></span></li><li><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Payee first name</span></span></li><li><span class="tab"><span class="meta">first_name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Payee last name</span></span></li><li><span class="tab"><span class="meta">last_name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The payee user</span></span></li><li><span class="tab"><span class="meta">payee</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Assets that the Payee has been invited to share revenue on. Cursor results are </span></span></li><li><span class="tab"><span class="comment line">#   of type Asset</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>status</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>asset_type</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">payee_assets_cursor</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">status</span>: <a class="support type" href="payeeassetsplitstatus.doc.html">PayeeAssetSplitStatus</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">asset_type</span>: <a class="support type" href="payeeassettype.doc.html">PayeeAssetType</a></span></span></li><li><span class="tab">): <a class="support type" href="payeeassets.doc.html">PayeeAssets</a>! </span></li><li></li><li><span class="tab"><span class="meta">payee_id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The payor user</span></span></li><li><span class="tab"><span class="meta">payor</span>: <a class="support type" href="payor.doc.html">Payor</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Payee phone number</span></span></li><li><span class="tab"><span class="meta">phone_number</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">total_earnings</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Time when the invite was updated</span></span></li><li><span class="tab"><span class="meta">updated_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

@@ -245,6 +245,11 @@
                 NetworkType
             </a>
         </li>
+        <li  title="OrganizationUserRole">
+            <a href="organizationuserrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserRole
+            </a>
+        </li>
         <li  title="OwnershipPoliciesSection">
             <a href="ownershippoliciessection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OwnershipPoliciesSection
@@ -338,6 +343,16 @@
         <li  title="UploadType">
             <a href="uploadtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadType
+            </a>
+        </li>
+        <li  title="UserInviteStatus">
+            <a href="userinvitestatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInviteStatus
+            </a>
+        </li>
+        <li  title="UsersCursorSortBy">
+            <a href="userscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorSortBy
             </a>
         </li>
         <li  title="VideoCategory">
@@ -1340,6 +1355,11 @@
                 ResendPayeeInvitePayload
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationPayload">
+            <a href="resendwelcomeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationPayload
+            </a>
+        </li>
         <li  title="RevenueByMonth">
             <a href="revenuebymonth.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RevenueByMonth
@@ -2190,6 +2210,11 @@
                 ResendPayeeInviteInput
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationInput">
+            <a href="resendwelcomeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationInput
+            </a>
+        </li>
         <li  title="RightsObject">
             <a href="rightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RightsObject
@@ -2399,7 +2424,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">MonthlyNetworkRevenue</span> {</li><li></li><li><span class="tab"><span class="meta">artist</span>: <a class="support type" href="artist.doc.html">Artist</a> </span></li><li></li><li><span class="tab"><span class="meta">date</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="meta">downloads_agent_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">downloads_client_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">downloads_net_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">network</span>: <a class="support type" href="network.doc.html">Network</a> </span></li><li></li><li><span class="tab"><span class="meta">streams_agent_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">streams_client_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">streams_net_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">total_client_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">total_downloads_discrete</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">total_net_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">total_streams_discrete</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">MonthlyNetworkRevenue</span> {</li><li></li><li><span class="tab"><span class="meta">artist</span>: <a class="support type" href="artist.doc.html">Artist</a> </span></li><li></li><li><span class="tab"><span class="meta">date</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="meta">downloads_agent_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">downloads_client_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">downloads_net_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">network</span>: <a class="support type" href="network.doc.html">Network</a> </span></li><li></li><li><span class="tab"><span class="meta">streams_agent_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="meta">streams_client_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">streams_net_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">total_client_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">total_downloads_discrete</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">total_net_revenue</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">total_streams_discrete</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
