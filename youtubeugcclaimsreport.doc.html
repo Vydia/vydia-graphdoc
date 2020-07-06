@@ -245,6 +245,11 @@
                 NetworkType
             </a>
         </li>
+        <li  title="OrganizationUserRole">
+            <a href="organizationuserrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserRole
+            </a>
+        </li>
         <li  title="OwnershipPoliciesSection">
             <a href="ownershippoliciessection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OwnershipPoliciesSection
@@ -338,6 +343,16 @@
         <li  title="UploadType">
             <a href="uploadtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadType
+            </a>
+        </li>
+        <li  title="UserInviteStatus">
+            <a href="userinvitestatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInviteStatus
+            </a>
+        </li>
+        <li  title="UsersCursorSortBy">
+            <a href="userscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorSortBy
             </a>
         </li>
         <li  title="VideoCategory">
@@ -1340,6 +1355,11 @@
                 ResendPayeeInvitePayload
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationPayload">
+            <a href="resendwelcomeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationPayload
+            </a>
+        </li>
         <li  title="RevenueByMonth">
             <a href="revenuebymonth.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RevenueByMonth
@@ -2190,6 +2210,11 @@
                 ResendPayeeInviteInput
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationInput">
+            <a href="resendwelcomeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationInput
+            </a>
+        </li>
         <li  title="RightsObject">
             <a href="rightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RightsObject
@@ -2399,7 +2424,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">YoutubeUgcClaimsReport</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Channel Title for the Video</span></span></li><li><span class="tab"><span class="meta">channel_title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Claim ID that is registered for a media from youtube</span></span></li><li><span class="tab"><span class="meta">claim_id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Values can be among : Audio | Audiovisual | Composition | Visual</span></span></li><li><span class="tab"><span class="meta">claim_type</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Date when this claim is created</span></span></li><li><span class="tab"><span class="meta">created_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Date a claim occurred on</span></span></li><li><span class="tab"><span class="meta">date_claim_occurred</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Estimated Claimed Views for a claim report</span></span></li><li><span class="tab"><span class="meta">estimated_claimed_views</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Estimated total claimed views for a video from YouTube</span></span></li><li><span class="tab"><span class="meta">estimated_total_claimed_views_per_media_id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Estimated total claims by vydia for a video from YouTube</span></span></li><li><span class="tab"><span class="meta">estimated_total_claims_by_vydia_per_media_id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Custom ID for Youtube UGC Claims Report : MediaID_ClaimID</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">pretty_created_at</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   total views for a video</span></span></li><li><span class="tab"><span class="meta">total_video_lifetime_views</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Video ID from Youtube</span></span></li><li><span class="tab"><span class="meta">video_id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Title for the Video from Youtube</span></span></li><li><span class="tab"><span class="meta">video_title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">YoutubeUgcClaimsReport</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Channel Title for the Video</span></span></li><li><span class="tab"><span class="meta">channel_title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Claim ID that is registered for a media from youtube</span></span></li><li><span class="tab"><span class="meta">claim_id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Values can be among : Audio | Audiovisual | Composition | Visual</span></span></li><li><span class="tab"><span class="meta">claim_type</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Date when this claim is created</span></span></li><li><span class="tab"><span class="meta">created_at</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Date a claim occurred on</span></span></li><li><span class="tab"><span class="meta">date_claim_occurred</span>: <a class="support type" href="datetime.doc.html">DateTime</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Estimated Claimed Views for a claim report</span></span></li><li><span class="tab"><span class="meta">estimated_claimed_views</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Estimated total claimed views for a video from YouTube</span></span></li><li><span class="tab"><span class="meta">estimated_total_claimed_views_per_media_id</span>: <a class="support type" href="int.doc.html">Int</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   Estimated total claims by vydia for a video from YouTube</span></span></li><li><span class="tab"><span class="meta">estimated_total_claims_by_vydia_per_media_id</span>: <a class="support type" href="int.doc.html">Int</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   Custom ID for Youtube UGC Claims Report : MediaID_ClaimID</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">pretty_created_at</span>: <a class="support type" href="string.doc.html">String</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   total views for a video</span></span></li><li><span class="tab"><span class="meta">total_video_lifetime_views</span>: <a class="support type" href="int.doc.html">Int</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"WARNING: this field is not currently used in any application" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   Video ID from Youtube</span></span></li><li><span class="tab"><span class="meta">video_id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Title for the Video from Youtube</span></span></li><li><span class="tab"><span class="meta">video_title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

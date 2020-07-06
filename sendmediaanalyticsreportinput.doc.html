@@ -245,6 +245,11 @@
                 NetworkType
             </a>
         </li>
+        <li  title="OrganizationUserRole">
+            <a href="organizationuserrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserRole
+            </a>
+        </li>
         <li  title="OwnershipPoliciesSection">
             <a href="ownershippoliciessection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OwnershipPoliciesSection
@@ -338,6 +343,16 @@
         <li  title="UploadType">
             <a href="uploadtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadType
+            </a>
+        </li>
+        <li  title="UserInviteStatus">
+            <a href="userinvitestatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInviteStatus
+            </a>
+        </li>
+        <li  title="UsersCursorSortBy">
+            <a href="userscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorSortBy
             </a>
         </li>
         <li  title="VideoCategory">
@@ -1340,6 +1355,11 @@
                 ResendPayeeInvitePayload
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationPayload">
+            <a href="resendwelcomeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationPayload
+            </a>
+        </li>
         <li  title="RevenueByMonth">
             <a href="revenuebymonth.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RevenueByMonth
@@ -2190,6 +2210,11 @@
                 ResendPayeeInviteInput
             </a>
         </li>
+        <li  title="ResendWelcomeInvitationInput">
+            <a href="resendwelcomeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationInput
+            </a>
+        </li>
         <li  title="RightsObject">
             <a href="rightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 RightsObject
@@ -2399,7 +2424,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">SendMediaAnalyticsReportInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Run the mutation with no side effects in validate-only mode. When true, the </span></span></li><li><span class="tab"><span class="comment line">#   inputs will be validated and errors will be returned, but the mutation will not </span></span></li><li><span class="tab"><span class="comment line">#   perform any actions.</span></span></li><li><span class="tab"><span class="meta">skip_save</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The start date of the analytics report.</span></span></li><li><span class="tab"><span class="meta">start_date</span>: <a class="support type" href="date.doc.html">Date</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The end date of the analytics report.</span></span></li><li><span class="tab"><span class="meta">end_date</span>: <a class="support type" href="date.doc.html">Date</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Artist primary key.</span></span></li><li><span class="tab"><span class="meta">artist_id</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   User primary key.</span></span></li><li><span class="tab"><span class="meta">user_id</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Media primary key.</span></span></li><li><span class="tab"><span class="meta">media_id</span>: <a class="support type" href="id.doc.html">ID</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Organization primary key.</span></span></li><li><span class="tab"><span class="meta">organization_id</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   An array of email addresses.</span></span></li><li><span class="tab"><span class="meta">email_addresses</span>: [<a class="support type" href="string.doc.html">String</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The object type.</span></span></li><li><span class="tab"><span class="meta">object_type</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The report type.</span></span></li><li><span class="tab"><span class="meta">report_type</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   A unique identifier for the client performing the mutation.</span></span></li><li><span class="tab"><span class="meta">client_mutation_id</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">SendMediaAnalyticsReportInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Run the mutation with no side effects in validate-only mode. When true, the </span></span></li><li><span class="tab"><span class="comment line">#   inputs will be validated and errors will be returned, but the mutation will not </span></span></li><li><span class="tab"><span class="comment line">#   perform any actions.</span></span></li><li><span class="tab"><span class="meta">skip_save</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The start date of the analytics report.</span></span></li><li><span class="tab"><span class="meta">start_date</span>: <a class="support type" href="date.doc.html">Date</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The end date of the analytics report.</span></span></li><li><span class="tab"><span class="meta">end_date</span>: <a class="support type" href="date.doc.html">Date</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Artist primary key.</span></span></li><li><span class="tab"><span class="meta">artist_id</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   User primary key.</span></span></li><li><span class="tab"><span class="meta">user_id</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Media primary key.</span></span></li><li><span class="tab"><span class="meta">media_id</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Organization primary key.</span></span></li><li><span class="tab"><span class="meta">organization_id</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   An array of email addresses.</span></span></li><li><span class="tab"><span class="meta">email_addresses</span>: [<a class="support type" href="string.doc.html">String</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The report type.</span></span></li><li><span class="tab"><span class="meta">report_type</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   A unique identifier for the client performing the mutation.</span></span></li><li><span class="tab"><span class="meta">client_mutation_id</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
