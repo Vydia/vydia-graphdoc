@@ -1,0 +1,3097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>ToggleOtpMfaPayload</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li  title="Mutation">
+            <a href="mutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Mutation
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="BigInt">
+            <a href="bigint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BigInt
+            </a>
+        </li>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Date">
+            <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Date
+            </a>
+        </li>
+        <li  title="DateTime">
+            <a href="datetime.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DateTime
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="AdditionalServiceCategory">
+            <a href="additionalservicecategory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdditionalServiceCategory
+            </a>
+        </li>
+        <li  title="AdditionalServiceType">
+            <a href="additionalservicetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdditionalServiceType
+            </a>
+        </li>
+        <li  title="AgreementType">
+            <a href="agreementtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AgreementType
+            </a>
+        </li>
+        <li  title="AlbumPartnerDataLinkActionType">
+            <a href="albumpartnerdatalinkactiontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlbumPartnerDataLinkActionType
+            </a>
+        </li>
+        <li  title="AlbumsSortBy">
+            <a href="albumssortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlbumsSortBy
+            </a>
+        </li>
+        <li  title="AlbumType">
+            <a href="albumtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlbumType
+            </a>
+        </li>
+        <li  title="AnalyticsCountryCode">
+            <a href="analyticscountrycode.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsCountryCode
+            </a>
+        </li>
+        <li  title="ArtistNetworkAnalyticsChart">
+            <a href="artistnetworkanalyticschart.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ArtistNetworkAnalyticsChart
+            </a>
+        </li>
+        <li  title="ArtistSearchBy">
+            <a href="artistsearchby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ArtistSearchBy
+            </a>
+        </li>
+        <li  title="AssetType">
+            <a href="assettype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AssetType
+            </a>
+        </li>
+        <li  title="AudioAnalyticsByCountrySortBy">
+            <a href="audioanalyticsbycountrysortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsByCountrySortBy
+            </a>
+        </li>
+        <li  title="AudioAnalyticsNetworks">
+            <a href="audioanalyticsnetworks.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsNetworks
+            </a>
+        </li>
+        <li  title="AudioAnalyticsSortBy">
+            <a href="audioanalyticssortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsSortBy
+            </a>
+        </li>
+        <li  title="BrandLogoVariant">
+            <a href="brandlogovariant.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BrandLogoVariant
+            </a>
+        </li>
+        <li  title="BrandSignInTemplate">
+            <a href="brandsignintemplate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BrandSignInTemplate
+            </a>
+        </li>
+        <li  title="BroadcastsSortBy">
+            <a href="broadcastssortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BroadcastsSortBy
+            </a>
+        </li>
+        <li  title="BroadcastStatus">
+            <a href="broadcaststatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BroadcastStatus
+            </a>
+        </li>
+        <li  title="BroadcastType">
+            <a href="broadcasttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BroadcastType
+            </a>
+        </li>
+        <li  title="CashAdvanceRecoupmentsCursorSortBy">
+            <a href="cashadvancerecoupmentscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CashAdvanceRecoupmentsCursorSortBy
+            </a>
+        </li>
+        <li  title="CollaboratingArtistRole">
+            <a href="collaboratingartistrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CollaboratingArtistRole
+            </a>
+        </li>
+        <li  title="CountryCode">
+            <a href="countrycode.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CountryCode
+            </a>
+        </li>
+        <li  title="DeployerName">
+            <a href="deployername.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeployerName
+            </a>
+        </li>
+        <li  title="DestinationStatuses">
+            <a href="destinationstatuses.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DestinationStatuses
+            </a>
+        </li>
+        <li  title="EarningsStatementTransformerSources">
+            <a href="earningsstatementtransformersources.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EarningsStatementTransformerSources
+            </a>
+        </li>
+        <li  title="ExperimentGoal">
+            <a href="experimentgoal.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExperimentGoal
+            </a>
+        </li>
+        <li  title="ExperimentName">
+            <a href="experimentname.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExperimentName
+            </a>
+        </li>
+        <li  title="ExtraLinkType">
+            <a href="extralinktype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExtraLinkType
+            </a>
+        </li>
+        <li  title="Features">
+            <a href="features.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Features
+            </a>
+        </li>
+        <li  title="Generator">
+            <a href="generator.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Generator
+            </a>
+        </li>
+        <li  title="Genre">
+            <a href="genre.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Genre
+            </a>
+        </li>
+        <li  title="I18nLocale">
+            <a href="i18nlocale.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                I18nLocale
+            </a>
+        </li>
+        <li  title="InvalidMediaReason">
+            <a href="invalidmediareason.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InvalidMediaReason
+            </a>
+        </li>
+        <li  title="MediaLanguageCode">
+            <a href="medialanguagecode.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaLanguageCode
+            </a>
+        </li>
+        <li  title="MediaPolicyStatus">
+            <a href="mediapolicystatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaPolicyStatus
+            </a>
+        </li>
+        <li  title="MediaPolicyType">
+            <a href="mediapolicytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaPolicyType
+            </a>
+        </li>
+        <li  title="MediaSharedWithMe">
+            <a href="mediasharedwithme.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaSharedWithMe
+            </a>
+        </li>
+        <li  title="MediasV2SortBy">
+            <a href="mediasv2sortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediasV2SortBy
+            </a>
+        </li>
+        <li  title="MediaType">
+            <a href="mediatype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaType
+            </a>
+        </li>
+        <li  title="NetworkAnalyticsDateResolution">
+            <a href="networkanalyticsdateresolution.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkAnalyticsDateResolution
+            </a>
+        </li>
+        <li  title="NetworkAnalyticsNetworkType">
+            <a href="networkanalyticsnetworktype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkAnalyticsNetworkType
+            </a>
+        </li>
+        <li  title="NetworkExtraType">
+            <a href="networkextratype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkExtraType
+            </a>
+        </li>
+        <li  title="NetworkPlaylistSource">
+            <a href="networkplaylistsource.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkPlaylistSource
+            </a>
+        </li>
+        <li  title="NetworkPlaylistStatus">
+            <a href="networkplayliststatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkPlaylistStatus
+            </a>
+        </li>
+        <li  title="NetworkType">
+            <a href="networktype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkType
+            </a>
+        </li>
+        <li  title="NoticeType">
+            <a href="noticetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NoticeType
+            </a>
+        </li>
+        <li  title="OwnershipPoliciesSection">
+            <a href="ownershippoliciessection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OwnershipPoliciesSection
+            </a>
+        </li>
+        <li  title="PayeeAssetSplitStatus">
+            <a href="payeeassetsplitstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssetSplitStatus
+            </a>
+        </li>
+        <li  title="PayeeAssetType">
+            <a href="payeeassettype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssetType
+            </a>
+        </li>
+        <li  title="PayeeInvitesSortBy">
+            <a href="payeeinvitessortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeInvitesSortBy
+            </a>
+        </li>
+        <li  title="PlaylistAnalyticsSortBy">
+            <a href="playlistanalyticssortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlaylistAnalyticsSortBy
+            </a>
+        </li>
+        <li  title="PrettyTimeFormat">
+            <a href="prettytimeformat.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PrettyTimeFormat
+            </a>
+        </li>
+        <li  title="PublishableSocial">
+            <a href="publishablesocial.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PublishableSocial
+            </a>
+        </li>
+        <li  title="RankedMediasCursorSortBy">
+            <a href="rankedmediascursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RankedMediasCursorSortBy
+            </a>
+        </li>
+        <li  title="ReconnectableSocial">
+            <a href="reconnectablesocial.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReconnectableSocial
+            </a>
+        </li>
+        <li  title="RecoupmentStatus">
+            <a href="recoupmentstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RecoupmentStatus
+            </a>
+        </li>
+        <li  title="ReleaseCalendarStatus">
+            <a href="releasecalendarstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReleaseCalendarStatus
+            </a>
+        </li>
+        <li  title="ReleaseCalendarStatusFilterOption">
+            <a href="releasecalendarstatusfilteroption.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReleaseCalendarStatusFilterOption
+            </a>
+        </li>
+        <li  title="RemainingPayeePercentageReason">
+            <a href="remainingpayeepercentagereason.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RemainingPayeePercentageReason
+            </a>
+        </li>
+        <li  title="RightsAssetType">
+            <a href="rightsassettype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RightsAssetType
+            </a>
+        </li>
+        <li  title="RightType">
+            <a href="righttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RightType
+            </a>
+        </li>
+        <li  title="RoyaltyCenterRole">
+            <a href="royaltycenterrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RoyaltyCenterRole
+            </a>
+        </li>
+        <li  title="SalesTrendGroupBy">
+            <a href="salestrendgroupby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SalesTrendGroupBy
+            </a>
+        </li>
+        <li  title="SearchByOperator">
+            <a href="searchbyoperator.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SearchByOperator
+            </a>
+        </li>
+        <li  title="SignedAgreementsSortBy">
+            <a href="signedagreementssortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SignedAgreementsSortBy
+            </a>
+        </li>
+        <li  title="SignedAgreementType">
+            <a href="signedagreementtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SignedAgreementType
+            </a>
+        </li>
+        <li  title="SortOrder">
+            <a href="sortorder.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SortOrder
+            </a>
+        </li>
+        <li  title="SupportedVideo">
+            <a href="supportedvideo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SupportedVideo
+            </a>
+        </li>
+        <li  title="TestExampleVariant">
+            <a href="testexamplevariant.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestExampleVariant
+            </a>
+        </li>
+        <li  title="ThumbnailSize">
+            <a href="thumbnailsize.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThumbnailSize
+            </a>
+        </li>
+        <li  title="UgcClaimsNetworkType">
+            <a href="ugcclaimsnetworktype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UgcClaimsNetworkType
+            </a>
+        </li>
+        <li  title="UgcClaimsSortBy">
+            <a href="ugcclaimssortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UgcClaimsSortBy
+            </a>
+        </li>
+        <li  title="UploadType">
+            <a href="uploadtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UploadType
+            </a>
+        </li>
+        <li  title="UserInviteStatus">
+            <a href="userinvitestatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInviteStatus
+            </a>
+        </li>
+        <li  title="UserRole">
+            <a href="userrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRole
+            </a>
+        </li>
+        <li  title="UsersCursorSortBy">
+            <a href="userscursorsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorSortBy
+            </a>
+        </li>
+        <li  title="UserSearchBy">
+            <a href="usersearchby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSearchBy
+            </a>
+        </li>
+        <li  title="VideoCategory">
+            <a href="videocategory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                VideoCategory
+            </a>
+        </li>
+        <li  title="VideoSubcategory">
+            <a href="videosubcategory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                VideoSubcategory
+            </a>
+        </li>
+        <li  title="WebpackAssetType">
+            <a href="webpackassettype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WebpackAssetType
+            </a>
+        </li>
+        <li  title="WebpackBundle">
+            <a href="webpackbundle.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WebpackBundle
+            </a>
+        </li>
+        <li  title="WhitelabelBannerAdVariant">
+            <a href="whitelabelbanneradvariant.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WhitelabelBannerAdVariant
+            </a>
+        </li>
+        <li  title="YoutubeConflictsSortBy">
+            <a href="youtubeconflictssortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeConflictsSortBy
+            </a>
+        </li>
+        <li  title="YoutubeUgcSearchBy">
+            <a href="youtubeugcsearchby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeUgcSearchBy
+            </a>
+        </li>
+        <li  title="YoutubeUgcSortBy">
+            <a href="youtubeugcsortby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeUgcSortBy
+            </a>
+        </li>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Interfaces</h4>
+    <ul>
+        <li  title="AnalyticsPlaylist">
+            <a href="analyticsplaylist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsPlaylist
+            </a>
+        </li>
+        <li  title="MediaNetworkAnalytics">
+            <a href="medianetworkanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaNetworkAnalytics
+            </a>
+        </li>
+        <li  title="Notification">
+            <a href="notification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Notification
+            </a>
+        </li>
+        <li  title="PaymentMethod">
+            <a href="paymentmethod.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PaymentMethod
+            </a>
+        </li>
+        <li  title="PaymentMethodNonce">
+            <a href="paymentmethodnonce.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PaymentMethodNonce
+            </a>
+        </li>
+        <li  title="PublishedSocialNetwork">
+            <a href="publishedsocialnetwork.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PublishedSocialNetwork
+            </a>
+        </li>
+        <li  title="SalesTrend">
+            <a href="salestrend.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SalesTrend
+            </a>
+        </li>
+        <li  title="Social">
+            <a href="social.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Social
+            </a>
+        </li>
+        <li  title="SplitTest">
+            <a href="splittest.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SplitTest
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="A2VConversionFailed">
+            <a href="a2vconversionfailed.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                A2VConversionFailed
+            </a>
+        </li>
+        <li  title="AcceptAgreementPayload">
+            <a href="acceptagreementpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptAgreementPayload
+            </a>
+        </li>
+        <li  title="AcceptPayeeAssetSplitPayload">
+            <a href="acceptpayeeassetsplitpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptPayeeAssetSplitPayload
+            </a>
+        </li>
+        <li  title="AcceptPayeeInvitationPayload">
+            <a href="acceptpayeeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptPayeeInvitationPayload
+            </a>
+        </li>
+        <li  title="AcceptRcaPayload">
+            <a href="acceptrcapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptRcaPayload
+            </a>
+        </li>
+        <li  title="AcceptTermsAndConditionsPayload">
+            <a href="accepttermsandconditionspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptTermsAndConditionsPayload
+            </a>
+        </li>
+        <li  title="AcceptUclaPayload">
+            <a href="acceptuclapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptUclaPayload
+            </a>
+        </li>
+        <li  title="AdditionalService">
+            <a href="additionalservice.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdditionalService
+            </a>
+        </li>
+        <li  title="AdditionalServiceBundle">
+            <a href="additionalservicebundle.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdditionalServiceBundle
+            </a>
+        </li>
+        <li  title="AdminAddedComposer">
+            <a href="adminaddedcomposer.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdminAddedComposer
+            </a>
+        </li>
+        <li  title="AdminAssertedRights">
+            <a href="adminassertedrights.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdminAssertedRights
+            </a>
+        </li>
+        <li  title="AdminCreatedPolicies">
+            <a href="admincreatedpolicies.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdminCreatedPolicies
+            </a>
+        </li>
+        <li  title="AdminPayeeAssetSplitAccepted">
+            <a href="adminpayeeassetsplitaccepted.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdminPayeeAssetSplitAccepted
+            </a>
+        </li>
+        <li  title="AdminPayeeAssetSplitRejected">
+            <a href="adminpayeeassetsplitrejected.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdminPayeeAssetSplitRejected
+            </a>
+        </li>
+        <li  title="AdminPayeeAssetSplitTerminated">
+            <a href="adminpayeeassetsplitterminated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdminPayeeAssetSplitTerminated
+            </a>
+        </li>
+        <li  title="AdminUpdatedComposer">
+            <a href="adminupdatedcomposer.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdminUpdatedComposer
+            </a>
+        </li>
+        <li  title="AdminUpdatedOwnership">
+            <a href="adminupdatedownership.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdminUpdatedOwnership
+            </a>
+        </li>
+        <li  title="AdminUpdatedPolicies">
+            <a href="adminupdatedpolicies.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdminUpdatedPolicies
+            </a>
+        </li>
+        <li  title="Agreement">
+            <a href="agreement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Agreement
+            </a>
+        </li>
+        <li  title="Album">
+            <a href="album.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Album
+            </a>
+        </li>
+        <li  title="AlbumMedia">
+            <a href="albummedia.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlbumMedia
+            </a>
+        </li>
+        <li  title="AlbumMedias">
+            <a href="albummedias.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlbumMedias
+            </a>
+        </li>
+        <li  title="AlbumMetadata">
+            <a href="albummetadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlbumMetadata
+            </a>
+        </li>
+        <li  title="AlbumPartnerData">
+            <a href="albumpartnerdata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlbumPartnerData
+            </a>
+        </li>
+        <li  title="Albums">
+            <a href="albums.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Albums
+            </a>
+        </li>
+        <li  title="AnalyticsChart">
+            <a href="analyticschart.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsChart
+            </a>
+        </li>
+        <li  title="AnalyticsCountry">
+            <a href="analyticscountry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsCountry
+            </a>
+        </li>
+        <li  title="AnalyticsMetric">
+            <a href="analyticsmetric.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsMetric
+            </a>
+        </li>
+        <li  title="AnalyticsPlaylists">
+            <a href="analyticsplaylists.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsPlaylists
+            </a>
+        </li>
+        <li  title="AnalyticsTopArtist">
+            <a href="analyticstopartist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsTopArtist
+            </a>
+        </li>
+        <li  title="AnalyticsTopContent">
+            <a href="analyticstopcontent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsTopContent
+            </a>
+        </li>
+        <li  title="AnalyticsTopGeocountry">
+            <a href="analyticstopgeocountry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsTopGeocountry
+            </a>
+        </li>
+        <li  title="AnalyticsTopUser">
+            <a href="analyticstopuser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsTopUser
+            </a>
+        </li>
+        <li  title="AppleMusicArtistAnalytics">
+            <a href="applemusicartistanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AppleMusicArtistAnalytics
+            </a>
+        </li>
+        <li  title="AppleMusicDataPoint">
+            <a href="applemusicdatapoint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AppleMusicDataPoint
+            </a>
+        </li>
+        <li  title="AppleMusicPlaylist">
+            <a href="applemusicplaylist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AppleMusicPlaylist
+            </a>
+        </li>
+        <li  title="AppleMusicTrackAnalytics">
+            <a href="applemusictrackanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AppleMusicTrackAnalytics
+            </a>
+        </li>
+        <li  title="ArchivePayeeAssetSplitsPayload">
+            <a href="archivepayeeassetsplitspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ArchivePayeeAssetSplitsPayload
+            </a>
+        </li>
+        <li  title="ArchivePayeeInvitePayload">
+            <a href="archivepayeeinvitepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ArchivePayeeInvitePayload
+            </a>
+        </li>
+        <li  title="Artist">
+            <a href="artist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Artist
+            </a>
+        </li>
+        <li  title="ArtistUpdated">
+            <a href="artistupdated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ArtistUpdated
+            </a>
+        </li>
+        <li  title="Asset">
+            <a href="asset.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Asset
+            </a>
+        </li>
+        <li  title="AssetRevenue">
+            <a href="assetrevenue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AssetRevenue
+            </a>
+        </li>
+        <li  title="AudioAnalytics">
+            <a href="audioanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalytics
+            </a>
+        </li>
+        <li  title="AudioAnalyticsByAgegroup">
+            <a href="audioanalyticsbyagegroup.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsByAgegroup
+            </a>
+        </li>
+        <li  title="AudioAnalyticsByCountry">
+            <a href="audioanalyticsbycountry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsByCountry
+            </a>
+        </li>
+        <li  title="AudioAnalyticsByDevice">
+            <a href="audioanalyticsbydevice.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsByDevice
+            </a>
+        </li>
+        <li  title="AudioAnalyticsByGender">
+            <a href="audioanalyticsbygender.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsByGender
+            </a>
+        </li>
+        <li  title="AudioAnalyticsBySource">
+            <a href="audioanalyticsbysource.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsBySource
+            </a>
+        </li>
+        <li  title="AudiomackUser">
+            <a href="audiomackuser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudiomackUser
+            </a>
+        </li>
+        <li  title="AuthError">
+            <a href="autherror.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AuthError
+            </a>
+        </li>
+        <li  title="BalanceAdjustment">
+            <a href="balanceadjustment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BalanceAdjustment
+            </a>
+        </li>
+        <li  title="BalanceAdjustments">
+            <a href="balanceadjustments.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BalanceAdjustments
+            </a>
+        </li>
+        <li  title="BalanceHistoryDateSummary">
+            <a href="balancehistorydatesummary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BalanceHistoryDateSummary
+            </a>
+        </li>
+        <li  title="Branding">
+            <a href="branding.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Branding
+            </a>
+        </li>
+        <li  title="Broadcast">
+            <a href="broadcast.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Broadcast
+            </a>
+        </li>
+        <li  title="CancelSyncPayload">
+            <a href="cancelsyncpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CancelSyncPayload
+            </a>
+        </li>
+        <li  title="CarouselItem">
+            <a href="carouselitem.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CarouselItem
+            </a>
+        </li>
+        <li  title="CashAdvanceRecoupment">
+            <a href="cashadvancerecoupment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CashAdvanceRecoupment
+            </a>
+        </li>
+        <li  title="CashAdvanceRecoupmentCreated">
+            <a href="cashadvancerecoupmentcreated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CashAdvanceRecoupmentCreated
+            </a>
+        </li>
+        <li  title="ChangePasswordPayload">
+            <a href="changepasswordpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ChangePasswordPayload
+            </a>
+        </li>
+        <li  title="ChartDataPoint">
+            <a href="chartdatapoint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ChartDataPoint
+            </a>
+        </li>
+        <li  title="CollaboratingArtist">
+            <a href="collaboratingartist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CollaboratingArtist
+            </a>
+        </li>
+        <li  title="Composer">
+            <a href="composer.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Composer
+            </a>
+        </li>
+        <li  title="ConfirmPasswordPayload">
+            <a href="confirmpasswordpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfirmPasswordPayload
+            </a>
+        </li>
+        <li  title="ConfirmVIPPlanPayload">
+            <a href="confirmvipplanpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfirmVIPPlanPayload
+            </a>
+        </li>
+        <li  title="ConnectFbAndIgToArtistPayload">
+            <a href="connectfbandigtoartistpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConnectFbAndIgToArtistPayload
+            </a>
+        </li>
+        <li  title="ContentLicenseAgreement">
+            <a href="contentlicenseagreement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentLicenseAgreement
+            </a>
+        </li>
+        <li  title="Country">
+            <a href="country.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Country
+            </a>
+        </li>
+        <li  title="CreateAlbumPayload">
+            <a href="createalbumpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateAlbumPayload
+            </a>
+        </li>
+        <li  title="CreateAlbumReleasePayload">
+            <a href="createalbumreleasepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateAlbumReleasePayload
+            </a>
+        </li>
+        <li  title="CreateArtistPayload">
+            <a href="createartistpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateArtistPayload
+            </a>
+        </li>
+        <li  title="CreateAssetsPayload">
+            <a href="createassetspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateAssetsPayload
+            </a>
+        </li>
+        <li  title="CreateCashAdvanceRecoupmentPayload">
+            <a href="createcashadvancerecoupmentpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateCashAdvanceRecoupmentPayload
+            </a>
+        </li>
+        <li  title="CreateCompContentPayload">
+            <a href="createcompcontentpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateCompContentPayload
+            </a>
+        </li>
+        <li  title="CreateComposerPayload">
+            <a href="createcomposerpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateComposerPayload
+            </a>
+        </li>
+        <li  title="CreateEarningsStatementTransformationPayload">
+            <a href="createearningsstatementtransformationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateEarningsStatementTransformationPayload
+            </a>
+        </li>
+        <li  title="CreateJwtPayload">
+            <a href="createjwtpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateJwtPayload
+            </a>
+        </li>
+        <li  title="CreateMediaAssetsError">
+            <a href="createmediaassetserror.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateMediaAssetsError
+            </a>
+        </li>
+        <li  title="CreateMediaPayload">
+            <a href="createmediapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateMediaPayload
+            </a>
+        </li>
+        <li  title="CreateMediasPayload">
+            <a href="createmediaspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateMediasPayload
+            </a>
+        </li>
+        <li  title="CreateMessagePayload">
+            <a href="createmessagepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateMessagePayload
+            </a>
+        </li>
+        <li  title="CreatePayeeAssetSplitsPayload">
+            <a href="createpayeeassetsplitspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreatePayeeAssetSplitsPayload
+            </a>
+        </li>
+        <li  title="CreatePayeeInvitationPayload">
+            <a href="createpayeeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreatePayeeInvitationPayload
+            </a>
+        </li>
+        <li  title="CreateReleasePayload">
+            <a href="createreleasepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateReleasePayload
+            </a>
+        </li>
+        <li  title="CreateWhitelabelUserPayload">
+            <a href="createwhitelabeluserpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateWhitelabelUserPayload
+            </a>
+        </li>
+        <li  title="CreditCard">
+            <a href="creditcard.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreditCard
+            </a>
+        </li>
+        <li  title="DailyAudioAnalytics">
+            <a href="dailyaudioanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DailyAudioAnalytics
+            </a>
+        </li>
+        <li  title="DailyInstagramInsights">
+            <a href="dailyinstagraminsights.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DailyInstagramInsights
+            </a>
+        </li>
+        <li  title="DailymotionAuthError">
+            <a href="dailymotionautherror.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DailymotionAuthError
+            </a>
+        </li>
+        <li  title="DailymotionUser">
+            <a href="dailymotionuser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DailymotionUser
+            </a>
+        </li>
+        <li  title="DeleteAlbumsPayload">
+            <a href="deletealbumspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteAlbumsPayload
+            </a>
+        </li>
+        <li  title="DeleteArtistPayload">
+            <a href="deleteartistpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteArtistPayload
+            </a>
+        </li>
+        <li  title="DeleteDataPayload">
+            <a href="deletedatapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteDataPayload
+            </a>
+        </li>
+        <li  title="DeleteMediaPayload">
+            <a href="deletemediapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteMediaPayload
+            </a>
+        </li>
+        <li  title="DeleteMediasPayload">
+            <a href="deletemediaspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteMediasPayload
+            </a>
+        </li>
+        <li  title="DeleteUserRequestPayload">
+            <a href="deleteuserrequestpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteUserRequestPayload
+            </a>
+        </li>
+        <li  title="DeploymentConfirmed">
+            <a href="deploymentconfirmed.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeploymentConfirmed
+            </a>
+        </li>
+        <li  title="DeploymentScheduled">
+            <a href="deploymentscheduled.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeploymentScheduled
+            </a>
+        </li>
+        <li  title="DisconnectDailymotionUserFromArtistPayload">
+            <a href="disconnectdailymotionuserfromartistpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectDailymotionUserFromArtistPayload
+            </a>
+        </li>
+        <li  title="DisconnectFacebookPageFromArtistPayload">
+            <a href="disconnectfacebookpagefromartistpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectFacebookPageFromArtistPayload
+            </a>
+        </li>
+        <li  title="DisconnectInstagramBusinessAccountFromArtistPayload">
+            <a href="disconnectinstagrambusinessaccountfromartistpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectInstagramBusinessAccountFromArtistPayload
+            </a>
+        </li>
+        <li  title="DisconnectSocialAccountFromArtistPayload">
+            <a href="disconnectsocialaccountfromartistpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectSocialAccountFromArtistPayload
+            </a>
+        </li>
+        <li  title="DisconnectTwitterUserFromArtistPayload">
+            <a href="disconnecttwitteruserfromartistpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectTwitterUserFromArtistPayload
+            </a>
+        </li>
+        <li  title="DisconnectYoutubeChannelFromArtistPayload">
+            <a href="disconnectyoutubechannelfromartistpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectYoutubeChannelFromArtistPayload
+            </a>
+        </li>
+        <li  title="DowngradeBroadcastsPayload">
+            <a href="downgradebroadcastspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DowngradeBroadcastsPayload
+            </a>
+        </li>
+        <li  title="DowngradeStorageTierPayload">
+            <a href="downgradestoragetierpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DowngradeStorageTierPayload
+            </a>
+        </li>
+        <li  title="EarningsTransformerSources">
+            <a href="earningstransformersources.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EarningsTransformerSources
+            </a>
+        </li>
+        <li  title="EditOrganizationUserPayload">
+            <a href="editorganizationuserpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EditOrganizationUserPayload
+            </a>
+        </li>
+        <li  title="ExtraLink">
+            <a href="extralink.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExtraLink
+            </a>
+        </li>
+        <li  title="FacebookArtistAnalytics">
+            <a href="facebookartistanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FacebookArtistAnalytics
+            </a>
+        </li>
+        <li  title="FacebookAuthError">
+            <a href="facebookautherror.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FacebookAuthError
+            </a>
+        </li>
+        <li  title="FacebookDataPoint">
+            <a href="facebookdatapoint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FacebookDataPoint
+            </a>
+        </li>
+        <li  title="FacebookPage">
+            <a href="facebookpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FacebookPage
+            </a>
+        </li>
+        <li  title="FacebookTopVideo">
+            <a href="facebooktopvideo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FacebookTopVideo
+            </a>
+        </li>
+        <li  title="FacebookVideoAnalytics">
+            <a href="facebookvideoanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FacebookVideoAnalytics
+            </a>
+        </li>
+        <li  title="FileUpload">
+            <a href="fileupload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FileUpload
+            </a>
+        </li>
+        <li  title="FinishGoalPayload">
+            <a href="finishgoalpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FinishGoalPayload
+            </a>
+        </li>
+        <li  title="GenerateAlbumSlugPayload">
+            <a href="generatealbumslugpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateAlbumSlugPayload
+            </a>
+        </li>
+        <li  title="GenerateAWSV4SignaturePayload">
+            <a href="generateawsv4signaturepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateAWSV4SignaturePayload
+            </a>
+        </li>
+        <li  title="GenerateIsrcPayload">
+            <a href="generateisrcpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateIsrcPayload
+            </a>
+        </li>
+        <li  title="GenerateOneTimeLoginTokenPayload">
+            <a href="generateonetimelogintokenpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateOneTimeLoginTokenPayload
+            </a>
+        </li>
+        <li  title="GenerateS3MultipartUploadPayload">
+            <a href="generates3multipartuploadpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateS3MultipartUploadPayload
+            </a>
+        </li>
+        <li  title="GenerateUpcPayload">
+            <a href="generateupcpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateUpcPayload
+            </a>
+        </li>
+        <li  title="Generic">
+            <a href="generic.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Generic
+            </a>
+        </li>
+        <li  title="GenreObject">
+            <a href="genreobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenreObject
+            </a>
+        </li>
+        <li  title="Geocountry">
+            <a href="geocountry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Geocountry
+            </a>
+        </li>
+        <li  title="GroupedBalanceAdjustment">
+            <a href="groupedbalanceadjustment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GroupedBalanceAdjustment
+            </a>
+        </li>
+        <li  title="I18n">
+            <a href="i18n.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                I18n
+            </a>
+        </li>
+        <li  title="ImportInstagramVideosPayload">
+            <a href="importinstagramvideospayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImportInstagramVideosPayload
+            </a>
+        </li>
+        <li  title="ImportVideoPayload">
+            <a href="importvideopayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImportVideoPayload
+            </a>
+        </li>
+        <li  title="IngestLabelUsersAndArtistsPayload">
+            <a href="ingestlabelusersandartistspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IngestLabelUsersAndArtistsPayload
+            </a>
+        </li>
+        <li  title="InsightsAvailableNetwork">
+            <a href="insightsavailablenetwork.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightsAvailableNetwork
+            </a>
+        </li>
+        <li  title="InstagramArtistAnalytics">
+            <a href="instagramartistanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstagramArtistAnalytics
+            </a>
+        </li>
+        <li  title="InstagramArtistAudienceAnalytics">
+            <a href="instagramartistaudienceanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstagramArtistAudienceAnalytics
+            </a>
+        </li>
+        <li  title="InstagramBusinessAccount">
+            <a href="instagrambusinessaccount.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstagramBusinessAccount
+            </a>
+        </li>
+        <li  title="InstagramBusinessAccountInsights">
+            <a href="instagrambusinessaccountinsights.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstagramBusinessAccountInsights
+            </a>
+        </li>
+        <li  title="InstagramBusinessTopVideo">
+            <a href="instagrambusinesstopvideo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstagramBusinessTopVideo
+            </a>
+        </li>
+        <li  title="InstagramDataPoint">
+            <a href="instagramdatapoint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstagramDataPoint
+            </a>
+        </li>
+        <li  title="InstagramStoryAnalytics">
+            <a href="instagramstoryanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstagramStoryAnalytics
+            </a>
+        </li>
+        <li  title="InstagramUser">
+            <a href="instagramuser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstagramUser
+            </a>
+        </li>
+        <li  title="InstagramVideoAnalytics">
+            <a href="instagramvideoanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstagramVideoAnalytics
+            </a>
+        </li>
+        <li  title="InviteOrganizationUserPayload">
+            <a href="inviteorganizationuserpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InviteOrganizationUserPayload
+            </a>
+        </li>
+        <li  title="JWTReturnPayload">
+            <a href="jwtreturnpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                JWTReturnPayload
+            </a>
+        </li>
+        <li  title="MarkAsReadPayload">
+            <a href="markasreadpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MarkAsReadPayload
+            </a>
+        </li>
+        <li  title="Media">
+            <a href="media.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Media
+            </a>
+        </li>
+        <li  title="MediaLanguage">
+            <a href="medialanguage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaLanguage
+            </a>
+        </li>
+        <li  title="MediaRemainingPayeePercentage">
+            <a href="mediaremainingpayeepercentage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaRemainingPayeePercentage
+            </a>
+        </li>
+        <li  title="Medias">
+            <a href="medias.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Medias
+            </a>
+        </li>
+        <li  title="MediaSubCategory">
+            <a href="mediasubcategory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaSubCategory
+            </a>
+        </li>
+        <li  title="MediaUgcClaims">
+            <a href="mediaugcclaims.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaUgcClaims
+            </a>
+        </li>
+        <li  title="MediaUser">
+            <a href="mediauser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaUser
+            </a>
+        </li>
+        <li  title="MergeCompleted">
+            <a href="mergecompleted.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MergeCompleted
+            </a>
+        </li>
+        <li  title="MergeConflict">
+            <a href="mergeconflict.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MergeConflict
+            </a>
+        </li>
+        <li  title="Message">
+            <a href="message.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Message
+            </a>
+        </li>
+        <li  title="Metadata">
+            <a href="metadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Metadata
+            </a>
+        </li>
+        <li  title="MonthHasData">
+            <a href="monthhasdata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MonthHasData
+            </a>
+        </li>
+        <li  title="MonthlyNetworkRevenue">
+            <a href="monthlynetworkrevenue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MonthlyNetworkRevenue
+            </a>
+        </li>
+        <li  title="Network">
+            <a href="network.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Network
+            </a>
+        </li>
+        <li  title="NetworkApiArtist">
+            <a href="networkapiartist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkApiArtist
+            </a>
+        </li>
+        <li  title="NetworkExtra">
+            <a href="networkextra.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkExtra
+            </a>
+        </li>
+        <li  title="NetworkExtras">
+            <a href="networkextras.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkExtras
+            </a>
+        </li>
+        <li  title="NetworkGroup">
+            <a href="networkgroup.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkGroup
+            </a>
+        </li>
+        <li  title="NetworkRevenue">
+            <a href="networkrevenue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkRevenue
+            </a>
+        </li>
+        <li  title="NewAdminMessage">
+            <a href="newadminmessage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NewAdminMessage
+            </a>
+        </li>
+        <li  title="NewConflict">
+            <a href="newconflict.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NewConflict
+            </a>
+        </li>
+        <li  title="NewFacebookImport">
+            <a href="newfacebookimport.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NewFacebookImport
+            </a>
+        </li>
+        <li  title="NewInstagramImport">
+            <a href="newinstagramimport.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NewInstagramImport
+            </a>
+        </li>
+        <li  title="NewMergeRequest">
+            <a href="newmergerequest.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NewMergeRequest
+            </a>
+        </li>
+        <li  title="NewMessage">
+            <a href="newmessage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NewMessage
+            </a>
+        </li>
+        <li  title="NewYoutubeImport">
+            <a href="newyoutubeimport.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NewYoutubeImport
+            </a>
+        </li>
+        <li  title="Notice">
+            <a href="notice.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Notice
+            </a>
+        </li>
+        <li  title="Notifications">
+            <a href="notifications.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Notifications
+            </a>
+        </li>
+        <li  title="NotifyA2VUploadPayload">
+            <a href="notifya2vuploadpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotifyA2VUploadPayload
+            </a>
+        </li>
+        <li  title="NotifyMediaUploadPayload">
+            <a href="notifymediauploadpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotifyMediaUploadPayload
+            </a>
+        </li>
+        <li  title="NotifyUploadCompletePayload">
+            <a href="notifyuploadcompletepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotifyUploadCompletePayload
+            </a>
+        </li>
+        <li  title="OauthSignInPayload">
+            <a href="oauthsigninpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OauthSignInPayload
+            </a>
+        </li>
+        <li  title="ObserveUserPayload">
+            <a href="observeuserpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ObserveUserPayload
+            </a>
+        </li>
+        <li  title="Organization">
+            <a href="organization.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Organization
+            </a>
+        </li>
+        <li  title="OrganizationInviteAccepted">
+            <a href="organizationinviteaccepted.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationInviteAccepted
+            </a>
+        </li>
+        <li  title="OrganizationReleaseCreated">
+            <a href="organizationreleasecreated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationReleaseCreated
+            </a>
+        </li>
+        <li  title="OrganizationSalesTrendsByMonthByCountry">
+            <a href="organizationsalestrendsbymonthbycountry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationSalesTrendsByMonthByCountry
+            </a>
+        </li>
+        <li  title="OrganizationSalesTrendsByMonthByDate">
+            <a href="organizationsalestrendsbymonthbydate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationSalesTrendsByMonthByDate
+            </a>
+        </li>
+        <li  title="OrganizationSalesTrendsByMonthByNetwork">
+            <a href="organizationsalestrendsbymonthbynetwork.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationSalesTrendsByMonthByNetwork
+            </a>
+        </li>
+        <li  title="OrganizationSalesTrendsTotals">
+            <a href="organizationsalestrendstotals.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationSalesTrendsTotals
+            </a>
+        </li>
+        <li  title="PayeeAssets">
+            <a href="payeeassets.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssets
+            </a>
+        </li>
+        <li  title="PayeeAssetSplit">
+            <a href="payeeassetsplit.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssetSplit
+            </a>
+        </li>
+        <li  title="PayeeAssetSplitAccepted">
+            <a href="payeeassetsplitaccepted.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssetSplitAccepted
+            </a>
+        </li>
+        <li  title="PayeeAssetSplitExistingUserInvite">
+            <a href="payeeassetsplitexistinguserinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssetSplitExistingUserInvite
+            </a>
+        </li>
+        <li  title="PayeeAssetSplitExpiredForPayee">
+            <a href="payeeassetsplitexpiredforpayee.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssetSplitExpiredForPayee
+            </a>
+        </li>
+        <li  title="PayeeAssetSplitExpiredForPayor">
+            <a href="payeeassetsplitexpiredforpayor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssetSplitExpiredForPayor
+            </a>
+        </li>
+        <li  title="PayeeAssetSplitRejected">
+            <a href="payeeassetsplitrejected.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssetSplitRejected
+            </a>
+        </li>
+        <li  title="PayeeAssetSplitTerminated">
+            <a href="payeeassetsplitterminated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssetSplitTerminated
+            </a>
+        </li>
+        <li  title="PayeeAssetSplitTranslation">
+            <a href="payeeassetsplittranslation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssetSplitTranslation
+            </a>
+        </li>
+        <li  title="PayeeInvite">
+            <a href="payeeinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeInvite
+            </a>
+        </li>
+        <li  title="PayeeInvites">
+            <a href="payeeinvites.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeInvites
+            </a>
+        </li>
+        <li  title="PayeeMediaSplit">
+            <a href="payeemediasplit.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeMediaSplit
+            </a>
+        </li>
+        <li  title="PayeeMediaSplits">
+            <a href="payeemediasplits.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeMediaSplits
+            </a>
+        </li>
+        <li  title="PaymentAddress">
+            <a href="paymentaddress.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PaymentAddress
+            </a>
+        </li>
+        <li  title="PaymentMethodCreditCard">
+            <a href="paymentmethodcreditcard.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PaymentMethodCreditCard
+            </a>
+        </li>
+        <li  title="PaymentMethodPaypalAccount">
+            <a href="paymentmethodpaypalaccount.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PaymentMethodPaypalAccount
+            </a>
+        </li>
+        <li  title="Payor">
+            <a href="payor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Payor
+            </a>
+        </li>
+        <li  title="PayPalAccount">
+            <a href="paypalaccount.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayPalAccount
+            </a>
+        </li>
+        <li  title="PerformanceRightsOrganization">
+            <a href="performancerightsorganization.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PerformanceRightsOrganization
+            </a>
+        </li>
+        <li  title="Policy">
+            <a href="policy.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Policy
+            </a>
+        </li>
+        <li  title="PresignedUrl">
+            <a href="presignedurl.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PresignedUrl
+            </a>
+        </li>
+        <li  title="PresignedUrlPayload">
+            <a href="presignedurlpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PresignedUrlPayload
+            </a>
+        </li>
+        <li  title="ProcessingFinished">
+            <a href="processingfinished.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProcessingFinished
+            </a>
+        </li>
+        <li  title="Province">
+            <a href="province.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Province
+            </a>
+        </li>
+        <li  title="PublishedSocial">
+            <a href="publishedsocial.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PublishedSocial
+            </a>
+        </li>
+        <li  title="Publisher">
+            <a href="publisher.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Publisher
+            </a>
+        </li>
+        <li  title="QuarterlyEarnings">
+            <a href="quarterlyearnings.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QuarterlyEarnings
+            </a>
+        </li>
+        <li  title="RankedMedia">
+            <a href="rankedmedia.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RankedMedia
+            </a>
+        </li>
+        <li  title="ReadNotificationPayload">
+            <a href="readnotificationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReadNotificationPayload
+            </a>
+        </li>
+        <li  title="ReadNotificationsPayload">
+            <a href="readnotificationspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReadNotificationsPayload
+            </a>
+        </li>
+        <li  title="RejectPayeeAssetSplitPayload">
+            <a href="rejectpayeeassetsplitpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RejectPayeeAssetSplitPayload
+            </a>
+        </li>
+        <li  title="Release">
+            <a href="release.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Release
+            </a>
+        </li>
+        <li  title="ReleaseCalendarItem">
+            <a href="releasecalendaritem.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReleaseCalendarItem
+            </a>
+        </li>
+        <li  title="ReleaseConfirmationPayload">
+            <a href="releaseconfirmationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReleaseConfirmationPayload
+            </a>
+        </li>
+        <li  title="Releases">
+            <a href="releases.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Releases
+            </a>
+        </li>
+        <li  title="RequestVevoChannelPayload">
+            <a href="requestvevochannelpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RequestVevoChannelPayload
+            </a>
+        </li>
+        <li  title="ResendConfirmationEmailPayload">
+            <a href="resendconfirmationemailpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendConfirmationEmailPayload
+            </a>
+        </li>
+        <li  title="ResendPayeeInvitePayload">
+            <a href="resendpayeeinvitepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendPayeeInvitePayload
+            </a>
+        </li>
+        <li  title="ResendWelcomeInvitationPayload">
+            <a href="resendwelcomeinvitationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationPayload
+            </a>
+        </li>
+        <li  title="RevenueByMonth">
+            <a href="revenuebymonth.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RevenueByMonth
+            </a>
+        </li>
+        <li  title="RevenueMonthGroup">
+            <a href="revenuemonthgroup.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RevenueMonthGroup
+            </a>
+        </li>
+        <li  title="Right">
+            <a href="right.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Right
+            </a>
+        </li>
+        <li  title="RoyaltyCenterTipaltiAdded">
+            <a href="royaltycentertipaltiadded.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RoyaltyCenterTipaltiAdded
+            </a>
+        </li>
+        <li  title="SafeFacebookTopVideos">
+            <a href="safefacebooktopvideos.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SafeFacebookTopVideos
+            </a>
+        </li>
+        <li  title="SafeInstagramBusinessTopVideos">
+            <a href="safeinstagrambusinesstopvideos.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SafeInstagramBusinessTopVideos
+            </a>
+        </li>
+        <li  title="SafeYoutubeTopVideos">
+            <a href="safeyoutubetopvideos.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SafeYoutubeTopVideos
+            </a>
+        </li>
+        <li  title="SendBalanceHistoryDetailsReportPayload">
+            <a href="sendbalancehistorydetailsreportpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendBalanceHistoryDetailsReportPayload
+            </a>
+        </li>
+        <li  title="SendMediaAnalyticsReportPayload">
+            <a href="sendmediaanalyticsreportpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendMediaAnalyticsReportPayload
+            </a>
+        </li>
+        <li  title="SendOTPCodePayload">
+            <a href="sendotpcodepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendOTPCodePayload
+            </a>
+        </li>
+        <li  title="SendResetPasswordEmailPayload">
+            <a href="sendresetpasswordemailpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendResetPasswordEmailPayload
+            </a>
+        </li>
+        <li  title="SendRoyaltyCenterPaymentHistoryPayload">
+            <a href="sendroyaltycenterpaymenthistorypayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendRoyaltyCenterPaymentHistoryPayload
+            </a>
+        </li>
+        <li  title="SendYoutubeConflictsReportPayload">
+            <a href="sendyoutubeconflictsreportpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendYoutubeConflictsReportPayload
+            </a>
+        </li>
+        <li  title="Session">
+            <a href="session.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Session
+            </a>
+        </li>
+        <li  title="Settings">
+            <a href="settings.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Settings
+            </a>
+        </li>
+        <li  title="SignedAgreement">
+            <a href="signedagreement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SignedAgreement
+            </a>
+        </li>
+        <li  title="SignedAgreements">
+            <a href="signedagreements.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SignedAgreements
+            </a>
+        </li>
+        <li  title="SignInUserPayload">
+            <a href="signinuserpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SignInUserPayload
+            </a>
+        </li>
+        <li  title="SkipOtpVerificationPayload">
+            <a href="skipotpverificationpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SkipOtpVerificationPayload
+            </a>
+        </li>
+        <li  title="SpotifyArtistAnalytics">
+            <a href="spotifyartistanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SpotifyArtistAnalytics
+            </a>
+        </li>
+        <li  title="SpotifyDataPoint">
+            <a href="spotifydatapoint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SpotifyDataPoint
+            </a>
+        </li>
+        <li  title="SpotifyPlaylist">
+            <a href="spotifyplaylist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SpotifyPlaylist
+            </a>
+        </li>
+        <li  title="SpotifyTrackAnalytics">
+            <a href="spotifytrackanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SpotifyTrackAnalytics
+            </a>
+        </li>
+        <li  title="SpotifyUser">
+            <a href="spotifyuser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SpotifyUser
+            </a>
+        </li>
+        <li  title="StatusUpdated">
+            <a href="statusupdated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StatusUpdated
+            </a>
+        </li>
+        <li  title="StorageTier">
+            <a href="storagetier.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StorageTier
+            </a>
+        </li>
+        <li  title="StorageTierCharge">
+            <a href="storagetiercharge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StorageTierCharge
+            </a>
+        </li>
+        <li  title="SubmitCaptchaPayload">
+            <a href="submitcaptchapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SubmitCaptchaPayload
+            </a>
+        </li>
+        <li  title="Subscription">
+            <a href="subscription.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Subscription
+            </a>
+        </li>
+        <li  title="SyncConfig">
+            <a href="syncconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SyncConfig
+            </a>
+        </li>
+        <li  title="TermsAndConditions">
+            <a href="termsandconditions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TermsAndConditions
+            </a>
+        </li>
+        <li  title="Territory">
+            <a href="territory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Territory
+            </a>
+        </li>
+        <li  title="TestExample">
+            <a href="testexample.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestExample
+            </a>
+        </li>
+        <li  title="TierPermission">
+            <a href="tierpermission.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TierPermission
+            </a>
+        </li>
+        <li  title="TipaltiPayeeDetailsUpdated">
+            <a href="tipaltipayeedetailsupdated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TipaltiPayeeDetailsUpdated
+            </a>
+        </li>
+        <li class="slds-is-active" title="ToggleOtpMfaPayload">
+            <a href="toggleotpmfapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ToggleOtpMfaPayload
+            </a>
+        </li>
+        <li  title="TopAlbum">
+            <a href="topalbum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopAlbum
+            </a>
+        </li>
+        <li  title="TopAlbumMedia">
+            <a href="topalbummedia.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopAlbumMedia
+            </a>
+        </li>
+        <li  title="TopArtist">
+            <a href="topartist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopArtist
+            </a>
+        </li>
+        <li  title="TopGeocountry">
+            <a href="topgeocountry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopGeocountry
+            </a>
+        </li>
+        <li  title="TopMedia">
+            <a href="topmedia.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopMedia
+            </a>
+        </li>
+        <li  title="TopUser">
+            <a href="topuser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopUser
+            </a>
+        </li>
+        <li  title="Transaction">
+            <a href="transaction.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Transaction
+            </a>
+        </li>
+        <li  title="Transactions">
+            <a href="transactions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Transactions
+            </a>
+        </li>
+        <li  title="TwitterAuthError">
+            <a href="twitterautherror.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TwitterAuthError
+            </a>
+        </li>
+        <li  title="TwitterUser">
+            <a href="twitteruser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TwitterUser
+            </a>
+        </li>
+        <li  title="UCLAConfirmationSection">
+            <a href="uclaconfirmationsection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UCLAConfirmationSection
+            </a>
+        </li>
+        <li  title="UgcClaimsReportCursor">
+            <a href="ugcclaimsreportcursor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UgcClaimsReportCursor
+            </a>
+        </li>
+        <li  title="UnarchivePayeeInvitePayload">
+            <a href="unarchivepayeeinvitepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UnarchivePayeeInvitePayload
+            </a>
+        </li>
+        <li  title="UpdateAlbumArtworkPayload">
+            <a href="updatealbumartworkpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateAlbumArtworkPayload
+            </a>
+        </li>
+        <li  title="UpdateAlbumLinksPayload">
+            <a href="updatealbumlinkspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateAlbumLinksPayload
+            </a>
+        </li>
+        <li  title="UpdateAlbumMediaIdsPayload">
+            <a href="updatealbummediaidspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateAlbumMediaIdsPayload
+            </a>
+        </li>
+        <li  title="UpdateAlbumMetadataPayload">
+            <a href="updatealbummetadatapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateAlbumMetadataPayload
+            </a>
+        </li>
+        <li  title="UpdateArtistAppleEidPayload">
+            <a href="updateartistappleeidpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateArtistAppleEidPayload
+            </a>
+        </li>
+        <li  title="UpdateArtistPayload">
+            <a href="updateartistpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateArtistPayload
+            </a>
+        </li>
+        <li  title="UpdateArtistSpotifyEidPayload">
+            <a href="updateartistspotifyeidpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateArtistSpotifyEidPayload
+            </a>
+        </li>
+        <li  title="UpdateBroadcastStatusPayload">
+            <a href="updatebroadcaststatuspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateBroadcastStatusPayload
+            </a>
+        </li>
+        <li  title="UpdateCategoryPayload">
+            <a href="updatecategorypayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateCategoryPayload
+            </a>
+        </li>
+        <li  title="UpdateComposerPayload">
+            <a href="updatecomposerpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateComposerPayload
+            </a>
+        </li>
+        <li  title="UpdateMediaArtistPayload">
+            <a href="updatemediaartistpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateMediaArtistPayload
+            </a>
+        </li>
+        <li  title="UpdateMetadataPayload">
+            <a href="updatemetadatapayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateMetadataPayload
+            </a>
+        </li>
+        <li  title="UpdateOwnershipAndPoliciesPayload">
+            <a href="updateownershipandpoliciespayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateOwnershipAndPoliciesPayload
+            </a>
+        </li>
+        <li  title="UpdateRightsPayload">
+            <a href="updaterightspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateRightsPayload
+            </a>
+        </li>
+        <li  title="UpdateSeenFeaturesPayload">
+            <a href="updateseenfeaturespayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateSeenFeaturesPayload
+            </a>
+        </li>
+        <li  title="UpdateSocialSyncPayload">
+            <a href="updatesocialsyncpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateSocialSyncPayload
+            </a>
+        </li>
+        <li  title="UpgradeArtistsPayload">
+            <a href="upgradeartistspayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpgradeArtistsPayload
+            </a>
+        </li>
+        <li  title="UploadFailed">
+            <a href="uploadfailed.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UploadFailed
+            </a>
+        </li>
+        <li  title="UploadFinished">
+            <a href="uploadfinished.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UploadFinished
+            </a>
+        </li>
+        <li  title="User">
+            <a href="user.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                User
+            </a>
+        </li>
+        <li  title="UserAddedComposer">
+            <a href="useraddedcomposer.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserAddedComposer
+            </a>
+        </li>
+        <li  title="UserAgreement">
+            <a href="useragreement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserAgreement
+            </a>
+        </li>
+        <li  title="UserArchive">
+            <a href="userarchive.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserArchive
+            </a>
+        </li>
+        <li  title="UserAssertedRights">
+            <a href="userassertedrights.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserAssertedRights
+            </a>
+        </li>
+        <li  title="UserCreatedPolicies">
+            <a href="usercreatedpolicies.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserCreatedPolicies
+            </a>
+        </li>
+        <li  title="UserError">
+            <a href="usererror.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserError
+            </a>
+        </li>
+        <li  title="UserUpdatedComposer">
+            <a href="userupdatedcomposer.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserUpdatedComposer
+            </a>
+        </li>
+        <li  title="UserUpdatedOwnership">
+            <a href="userupdatedownership.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserUpdatedOwnership
+            </a>
+        </li>
+        <li  title="UserUpdatedPolicies">
+            <a href="userupdatedpolicies.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserUpdatedPolicies
+            </a>
+        </li>
+        <li  title="VerifyOTPCodePayload">
+            <a href="verifyotpcodepayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                VerifyOTPCodePayload
+            </a>
+        </li>
+        <li  title="VevoVideoAnalytics">
+            <a href="vevovideoanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                VevoVideoAnalytics
+            </a>
+        </li>
+        <li  title="VevoYoutubeChannel">
+            <a href="vevoyoutubechannel.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                VevoYoutubeChannel
+            </a>
+        </li>
+        <li  title="VevoYoutubeVideo">
+            <a href="vevoyoutubevideo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                VevoYoutubeVideo
+            </a>
+        </li>
+        <li  title="VydiaFAQ">
+            <a href="vydiafaq.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                VydiaFAQ
+            </a>
+        </li>
+        <li  title="VydiaTestTranslations">
+            <a href="vydiatesttranslations.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                VydiaTestTranslations
+            </a>
+        </li>
+        <li  title="WhitelabelBannerAd">
+            <a href="whitelabelbannerad.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WhitelabelBannerAd
+            </a>
+        </li>
+        <li  title="YoutubeArtistAnalytics">
+            <a href="youtubeartistanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeArtistAnalytics
+            </a>
+        </li>
+        <li  title="YoutubeAuthError">
+            <a href="youtubeautherror.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeAuthError
+            </a>
+        </li>
+        <li  title="YoutubeChannel">
+            <a href="youtubechannel.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeChannel
+            </a>
+        </li>
+        <li  title="YoutubeConflict">
+            <a href="youtubeconflict.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeConflict
+            </a>
+        </li>
+        <li  title="YoutubeConflictTotals">
+            <a href="youtubeconflicttotals.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeConflictTotals
+            </a>
+        </li>
+        <li  title="YoutubeDataPoint">
+            <a href="youtubedatapoint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeDataPoint
+            </a>
+        </li>
+        <li  title="YoutubeTopVideo">
+            <a href="youtubetopvideo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeTopVideo
+            </a>
+        </li>
+        <li  title="YoutubeUgc">
+            <a href="youtubeugc.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeUgc
+            </a>
+        </li>
+        <li  title="YoutubeUgcClaimsReport">
+            <a href="youtubeugcclaimsreport.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeUgcClaimsReport
+            </a>
+        </li>
+        <li  title="YoutubeUgcTotals">
+            <a href="youtubeugctotals.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeUgcTotals
+            </a>
+        </li>
+        <li  title="YoutubeVideoAnalytics">
+            <a href="youtubevideoanalytics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeVideoAnalytics
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="AcceptAgreementInput">
+            <a href="acceptagreementinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptAgreementInput
+            </a>
+        </li>
+        <li  title="AcceptPayeeAssetSplitInput">
+            <a href="acceptpayeeassetsplitinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptPayeeAssetSplitInput
+            </a>
+        </li>
+        <li  title="AcceptPayeeInvitationInput">
+            <a href="acceptpayeeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptPayeeInvitationInput
+            </a>
+        </li>
+        <li  title="AcceptRcaInput">
+            <a href="acceptrcainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptRcaInput
+            </a>
+        </li>
+        <li  title="AcceptTermsAndConditionsInput">
+            <a href="accepttermsandconditionsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptTermsAndConditionsInput
+            </a>
+        </li>
+        <li  title="AcceptUclaInput">
+            <a href="acceptuclainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptUclaInput
+            </a>
+        </li>
+        <li  title="AdditionalArtistObject">
+            <a href="additionalartistobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdditionalArtistObject
+            </a>
+        </li>
+        <li  title="AdditionalServiceBundlesCursorInput">
+            <a href="additionalservicebundlescursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdditionalServiceBundlesCursorInput
+            </a>
+        </li>
+        <li  title="AdditionalServiceObject">
+            <a href="additionalserviceobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdditionalServiceObject
+            </a>
+        </li>
+        <li  title="AdditionalServicesCursorInput">
+            <a href="additionalservicescursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdditionalServicesCursorInput
+            </a>
+        </li>
+        <li  title="AdditionalTrackArtistObject">
+            <a href="additionaltrackartistobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdditionalTrackArtistObject
+            </a>
+        </li>
+        <li  title="AnalyticsTopArtistsCursorInput">
+            <a href="analyticstopartistscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsTopArtistsCursorInput
+            </a>
+        </li>
+        <li  title="AnalyticsTopContentCursorInput">
+            <a href="analyticstopcontentcursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsTopContentCursorInput
+            </a>
+        </li>
+        <li  title="AnalyticsTopGeocountryCursorInput">
+            <a href="analyticstopgeocountrycursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsTopGeocountryCursorInput
+            </a>
+        </li>
+        <li  title="AnalyticsTopUsersCursorInput">
+            <a href="analyticstopuserscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AnalyticsTopUsersCursorInput
+            </a>
+        </li>
+        <li  title="AppleMusicArtistAnalyticsCursorInput">
+            <a href="applemusicartistanalyticscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AppleMusicArtistAnalyticsCursorInput
+            </a>
+        </li>
+        <li  title="ArchivePayeeAssetSplitsInput">
+            <a href="archivepayeeassetsplitsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ArchivePayeeAssetSplitsInput
+            </a>
+        </li>
+        <li  title="ArchivePayeeInviteInput">
+            <a href="archivepayeeinviteinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ArchivePayeeInviteInput
+            </a>
+        </li>
+        <li  title="ArtistObject">
+            <a href="artistobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ArtistObject
+            </a>
+        </li>
+        <li  title="ArtistsCursorInput">
+            <a href="artistscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ArtistsCursorInput
+            </a>
+        </li>
+        <li  title="ArtistSearch">
+            <a href="artistsearch.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ArtistSearch
+            </a>
+        </li>
+        <li  title="AssetRevenuesCursorInput">
+            <a href="assetrevenuescursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AssetRevenuesCursorInput
+            </a>
+        </li>
+        <li  title="AudioAnalyticsByAgegroupCursorInput">
+            <a href="audioanalyticsbyagegroupcursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsByAgegroupCursorInput
+            </a>
+        </li>
+        <li  title="AudioAnalyticsByCountryCursorInput">
+            <a href="audioanalyticsbycountrycursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsByCountryCursorInput
+            </a>
+        </li>
+        <li  title="AudioAnalyticsByDeviceCursorInput">
+            <a href="audioanalyticsbydevicecursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsByDeviceCursorInput
+            </a>
+        </li>
+        <li  title="AudioAnalyticsByGenderCursorInput">
+            <a href="audioanalyticsbygendercursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsByGenderCursorInput
+            </a>
+        </li>
+        <li  title="AudioAnalyticsBySourceCursorInput">
+            <a href="audioanalyticsbysourcecursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsBySourceCursorInput
+            </a>
+        </li>
+        <li  title="AudioAnalyticsCursorInput">
+            <a href="audioanalyticscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AudioAnalyticsCursorInput
+            </a>
+        </li>
+        <li  title="BalanceActivityMonthsCursorInput">
+            <a href="balanceactivitymonthscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BalanceActivityMonthsCursorInput
+            </a>
+        </li>
+        <li  title="BalanceHistoryDateSummariesCursorInput">
+            <a href="balancehistorydatesummariescursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BalanceHistoryDateSummariesCursorInput
+            </a>
+        </li>
+        <li  title="BroadcastsCursorInput">
+            <a href="broadcastscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BroadcastsCursorInput
+            </a>
+        </li>
+        <li  title="CancelSyncInput">
+            <a href="cancelsyncinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CancelSyncInput
+            </a>
+        </li>
+        <li  title="CashAdvanceRecoupmentsCursorInput">
+            <a href="cashadvancerecoupmentscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CashAdvanceRecoupmentsCursorInput
+            </a>
+        </li>
+        <li  title="ChangePasswordInput">
+            <a href="changepasswordinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ChangePasswordInput
+            </a>
+        </li>
+        <li  title="CompContentObject">
+            <a href="compcontentobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompContentObject
+            </a>
+        </li>
+        <li  title="ComposersCursorInput">
+            <a href="composerscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ComposersCursorInput
+            </a>
+        </li>
+        <li  title="ConfirmPasswordInput">
+            <a href="confirmpasswordinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfirmPasswordInput
+            </a>
+        </li>
+        <li  title="ConfirmVIPPlanInput">
+            <a href="confirmvipplaninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConfirmVIPPlanInput
+            </a>
+        </li>
+        <li  title="ConnectFbAndIgToArtistInput">
+            <a href="connectfbandigtoartistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConnectFbAndIgToArtistInput
+            </a>
+        </li>
+        <li  title="CreateAlbumInput">
+            <a href="createalbuminput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateAlbumInput
+            </a>
+        </li>
+        <li  title="CreateAlbumReleaseInput">
+            <a href="createalbumreleaseinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateAlbumReleaseInput
+            </a>
+        </li>
+        <li  title="CreateArtistInput">
+            <a href="createartistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateArtistInput
+            </a>
+        </li>
+        <li  title="CreateAssetsInput">
+            <a href="createassetsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateAssetsInput
+            </a>
+        </li>
+        <li  title="CreateCashAdvanceRecoupmentInput">
+            <a href="createcashadvancerecoupmentinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateCashAdvanceRecoupmentInput
+            </a>
+        </li>
+        <li  title="CreateCompContentInput">
+            <a href="createcompcontentinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateCompContentInput
+            </a>
+        </li>
+        <li  title="CreateComposerInput">
+            <a href="createcomposerinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateComposerInput
+            </a>
+        </li>
+        <li  title="CreateEarningsStatementTransformationInput">
+            <a href="createearningsstatementtransformationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateEarningsStatementTransformationInput
+            </a>
+        </li>
+        <li  title="CreateJwtInput">
+            <a href="createjwtinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateJwtInput
+            </a>
+        </li>
+        <li  title="CreateMediaInput">
+            <a href="createmediainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateMediaInput
+            </a>
+        </li>
+        <li  title="CreateMediasInput">
+            <a href="createmediasinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateMediasInput
+            </a>
+        </li>
+        <li  title="CreateMessageInput">
+            <a href="createmessageinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateMessageInput
+            </a>
+        </li>
+        <li  title="CreatePayeeAssetSplitsInput">
+            <a href="createpayeeassetsplitsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreatePayeeAssetSplitsInput
+            </a>
+        </li>
+        <li  title="CreatePayeeInvitationInput">
+            <a href="createpayeeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreatePayeeInvitationInput
+            </a>
+        </li>
+        <li  title="CreateReleaseInput">
+            <a href="createreleaseinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateReleaseInput
+            </a>
+        </li>
+        <li  title="CreateWhitelabelUserInput">
+            <a href="createwhitelabeluserinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreateWhitelabelUserInput
+            </a>
+        </li>
+        <li  title="DeleteAlbumsInput">
+            <a href="deletealbumsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteAlbumsInput
+            </a>
+        </li>
+        <li  title="DeleteArtistInput">
+            <a href="deleteartistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteArtistInput
+            </a>
+        </li>
+        <li  title="DeleteDataInput">
+            <a href="deletedatainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteDataInput
+            </a>
+        </li>
+        <li  title="DeleteMediaInput">
+            <a href="deletemediainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteMediaInput
+            </a>
+        </li>
+        <li  title="DeleteMediasInput">
+            <a href="deletemediasinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteMediasInput
+            </a>
+        </li>
+        <li  title="DeleteUserRequestInput">
+            <a href="deleteuserrequestinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeleteUserRequestInput
+            </a>
+        </li>
+        <li  title="DisconnectDailymotionUserFromArtistInput">
+            <a href="disconnectdailymotionuserfromartistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectDailymotionUserFromArtistInput
+            </a>
+        </li>
+        <li  title="DisconnectFacebookPageFromArtistInput">
+            <a href="disconnectfacebookpagefromartistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectFacebookPageFromArtistInput
+            </a>
+        </li>
+        <li  title="DisconnectInstagramBusinessAccountFromArtistInput">
+            <a href="disconnectinstagrambusinessaccountfromartistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectInstagramBusinessAccountFromArtistInput
+            </a>
+        </li>
+        <li  title="DisconnectSocialAccountFromArtistInput">
+            <a href="disconnectsocialaccountfromartistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectSocialAccountFromArtistInput
+            </a>
+        </li>
+        <li  title="DisconnectTwitterUserFromArtistInput">
+            <a href="disconnecttwitteruserfromartistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectTwitterUserFromArtistInput
+            </a>
+        </li>
+        <li  title="DisconnectYoutubeChannelFromArtistInput">
+            <a href="disconnectyoutubechannelfromartistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DisconnectYoutubeChannelFromArtistInput
+            </a>
+        </li>
+        <li  title="DowngradeBroadcastsInput">
+            <a href="downgradebroadcastsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DowngradeBroadcastsInput
+            </a>
+        </li>
+        <li  title="DowngradeStorageTierInput">
+            <a href="downgradestoragetierinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DowngradeStorageTierInput
+            </a>
+        </li>
+        <li  title="EditComposerObject">
+            <a href="editcomposerobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EditComposerObject
+            </a>
+        </li>
+        <li  title="EditOrganizationUserInput">
+            <a href="editorganizationuserinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EditOrganizationUserInput
+            </a>
+        </li>
+        <li  title="EditRightsObject">
+            <a href="editrightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EditRightsObject
+            </a>
+        </li>
+        <li  title="ExtraLinkObject">
+            <a href="extralinkobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExtraLinkObject
+            </a>
+        </li>
+        <li  title="FacebookArtistAnalyticsCursorInput">
+            <a href="facebookartistanalyticscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FacebookArtistAnalyticsCursorInput
+            </a>
+        </li>
+        <li  title="FbPage">
+            <a href="fbpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FbPage
+            </a>
+        </li>
+        <li  title="FileObject">
+            <a href="fileobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FileObject
+            </a>
+        </li>
+        <li  title="FileUploadObject">
+            <a href="fileuploadobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FileUploadObject
+            </a>
+        </li>
+        <li  title="FinishGoalInput">
+            <a href="finishgoalinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FinishGoalInput
+            </a>
+        </li>
+        <li  title="GenerateAlbumSlugInput">
+            <a href="generatealbumsluginput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateAlbumSlugInput
+            </a>
+        </li>
+        <li  title="GenerateAWSV4SignatureInput">
+            <a href="generateawsv4signatureinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateAWSV4SignatureInput
+            </a>
+        </li>
+        <li  title="GenerateIsrcInput">
+            <a href="generateisrcinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateIsrcInput
+            </a>
+        </li>
+        <li  title="GenerateOneTimeLoginTokenInput">
+            <a href="generateonetimelogintokeninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateOneTimeLoginTokenInput
+            </a>
+        </li>
+        <li  title="GenerateS3MultipartUploadInput">
+            <a href="generates3multipartuploadinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateS3MultipartUploadInput
+            </a>
+        </li>
+        <li  title="GenerateUpcInput">
+            <a href="generateupcinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenerateUpcInput
+            </a>
+        </li>
+        <li  title="IgAccount">
+            <a href="igaccount.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IgAccount
+            </a>
+        </li>
+        <li  title="ImportInstagramVideosInput">
+            <a href="importinstagramvideosinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImportInstagramVideosInput
+            </a>
+        </li>
+        <li  title="ImportVideoInput">
+            <a href="importvideoinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImportVideoInput
+            </a>
+        </li>
+        <li  title="IngestLabelUsersAndArtistsInput">
+            <a href="ingestlabelusersandartistsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IngestLabelUsersAndArtistsInput
+            </a>
+        </li>
+        <li  title="InstagramArtistAnalyticsCursorInput">
+            <a href="instagramartistanalyticscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstagramArtistAnalyticsCursorInput
+            </a>
+        </li>
+        <li  title="InstagramArtistAudienceAnalyticsCursorInput">
+            <a href="instagramartistaudienceanalyticscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InstagramArtistAudienceAnalyticsCursorInput
+            </a>
+        </li>
+        <li  title="InviteOrganizationUserInput">
+            <a href="inviteorganizationuserinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InviteOrganizationUserInput
+            </a>
+        </li>
+        <li  title="MarkAsReadInput">
+            <a href="markasreadinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MarkAsReadInput
+            </a>
+        </li>
+        <li  title="MediasV2CursorInput">
+            <a href="mediasv2cursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediasV2CursorInput
+            </a>
+        </li>
+        <li  title="MessagesCursorInput">
+            <a href="messagescursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MessagesCursorInput
+            </a>
+        </li>
+        <li  title="MonthlyNetworkRevenuesCursorInput">
+            <a href="monthlynetworkrevenuescursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MonthlyNetworkRevenuesCursorInput
+            </a>
+        </li>
+        <li  title="NetworkRevenuesCursorInput">
+            <a href="networkrevenuescursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkRevenuesCursorInput
+            </a>
+        </li>
+        <li  title="NewComposerObject">
+            <a href="newcomposerobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NewComposerObject
+            </a>
+        </li>
+        <li  title="NewRightsObject">
+            <a href="newrightsobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NewRightsObject
+            </a>
+        </li>
+        <li  title="NotifyA2VUploadInput">
+            <a href="notifya2vuploadinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotifyA2VUploadInput
+            </a>
+        </li>
+        <li  title="NotifyMediaUploadInput">
+            <a href="notifymediauploadinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotifyMediaUploadInput
+            </a>
+        </li>
+        <li  title="NotifyUploadCompleteInput">
+            <a href="notifyuploadcompleteinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotifyUploadCompleteInput
+            </a>
+        </li>
+        <li  title="OauthSignInInput">
+            <a href="oauthsignininput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OauthSignInInput
+            </a>
+        </li>
+        <li  title="ObserveUserInput">
+            <a href="observeuserinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ObserveUserInput
+            </a>
+        </li>
+        <li  title="PayeeAssetObject">
+            <a href="payeeassetobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeAssetObject
+            </a>
+        </li>
+        <li  title="PayeeInvitesV2CursorInput">
+            <a href="payeeinvitesv2cursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PayeeInvitesV2CursorInput
+            </a>
+        </li>
+        <li  title="PresignedUrlInput">
+            <a href="presignedurlinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PresignedUrlInput
+            </a>
+        </li>
+        <li  title="PublishersCursorInput">
+            <a href="publisherscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PublishersCursorInput
+            </a>
+        </li>
+        <li  title="QuarterlyEarningsCursorInput">
+            <a href="quarterlyearningscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QuarterlyEarningsCursorInput
+            </a>
+        </li>
+        <li  title="RankedMediasCursorInput">
+            <a href="rankedmediascursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RankedMediasCursorInput
+            </a>
+        </li>
+        <li  title="ReadNotificationInput">
+            <a href="readnotificationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReadNotificationInput
+            </a>
+        </li>
+        <li  title="ReadNotificationsInput">
+            <a href="readnotificationsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReadNotificationsInput
+            </a>
+        </li>
+        <li  title="RejectPayeeAssetSplitInput">
+            <a href="rejectpayeeassetsplitinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RejectPayeeAssetSplitInput
+            </a>
+        </li>
+        <li  title="ReleaseConfirmationInput">
+            <a href="releaseconfirmationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReleaseConfirmationInput
+            </a>
+        </li>
+        <li  title="ReleasesV2CursorInput">
+            <a href="releasesv2cursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReleasesV2CursorInput
+            </a>
+        </li>
+        <li  title="RequestVevoChannelInput">
+            <a href="requestvevochannelinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RequestVevoChannelInput
+            </a>
+        </li>
+        <li  title="ResendConfirmationEmailInput">
+            <a href="resendconfirmationemailinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendConfirmationEmailInput
+            </a>
+        </li>
+        <li  title="ResendPayeeInviteInput">
+            <a href="resendpayeeinviteinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendPayeeInviteInput
+            </a>
+        </li>
+        <li  title="ResendWelcomeInvitationInput">
+            <a href="resendwelcomeinvitationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResendWelcomeInvitationInput
+            </a>
+        </li>
+        <li  title="SalesTrendsInput">
+            <a href="salestrendsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SalesTrendsInput
+            </a>
+        </li>
+        <li  title="SendBalanceHistoryDetailsReportInput">
+            <a href="sendbalancehistorydetailsreportinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendBalanceHistoryDetailsReportInput
+            </a>
+        </li>
+        <li  title="SendMediaAnalyticsReportInput">
+            <a href="sendmediaanalyticsreportinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendMediaAnalyticsReportInput
+            </a>
+        </li>
+        <li  title="SendOTPCodeInput">
+            <a href="sendotpcodeinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendOTPCodeInput
+            </a>
+        </li>
+        <li  title="SendResetPasswordEmailInput">
+            <a href="sendresetpasswordemailinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendResetPasswordEmailInput
+            </a>
+        </li>
+        <li  title="SendRoyaltyCenterPaymentHistoryInput">
+            <a href="sendroyaltycenterpaymenthistoryinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendRoyaltyCenterPaymentHistoryInput
+            </a>
+        </li>
+        <li  title="SendYoutubeConflictsReportInput">
+            <a href="sendyoutubeconflictsreportinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SendYoutubeConflictsReportInput
+            </a>
+        </li>
+        <li  title="SignInUserInput">
+            <a href="signinuserinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SignInUserInput
+            </a>
+        </li>
+        <li  title="SkipOtpVerificationInput">
+            <a href="skipotpverificationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SkipOtpVerificationInput
+            </a>
+        </li>
+        <li  title="Socials">
+            <a href="socials.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Socials
+            </a>
+        </li>
+        <li  title="SplitObject">
+            <a href="splitobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SplitObject
+            </a>
+        </li>
+        <li  title="SpotifyArtistAnalyticsCursorInput">
+            <a href="spotifyartistanalyticscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SpotifyArtistAnalyticsCursorInput
+            </a>
+        </li>
+        <li  title="SubmitCaptchaInput">
+            <a href="submitcaptchainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SubmitCaptchaInput
+            </a>
+        </li>
+        <li  title="ToggleOtpMfaInput">
+            <a href="toggleotpmfainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ToggleOtpMfaInput
+            </a>
+        </li>
+        <li  title="TopAlbumMediasCursorInput">
+            <a href="topalbummediascursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopAlbumMediasCursorInput
+            </a>
+        </li>
+        <li  title="TopAlbumsCursorInput">
+            <a href="topalbumscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopAlbumsCursorInput
+            </a>
+        </li>
+        <li  title="TopArtistsCursorInput">
+            <a href="topartistscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopArtistsCursorInput
+            </a>
+        </li>
+        <li  title="TopGeocountryCursorInput">
+            <a href="topgeocountrycursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopGeocountryCursorInput
+            </a>
+        </li>
+        <li  title="TopMediasCursorInput">
+            <a href="topmediascursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopMediasCursorInput
+            </a>
+        </li>
+        <li  title="TopUsersCursorInput">
+            <a href="topuserscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopUsersCursorInput
+            </a>
+        </li>
+        <li  title="UnarchivePayeeInviteInput">
+            <a href="unarchivepayeeinviteinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UnarchivePayeeInviteInput
+            </a>
+        </li>
+        <li  title="UpdateAlbumArtworkInput">
+            <a href="updatealbumartworkinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateAlbumArtworkInput
+            </a>
+        </li>
+        <li  title="UpdateAlbumLinksInput">
+            <a href="updatealbumlinksinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateAlbumLinksInput
+            </a>
+        </li>
+        <li  title="UpdateAlbumMediaIdsInput">
+            <a href="updatealbummediaidsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateAlbumMediaIdsInput
+            </a>
+        </li>
+        <li  title="UpdateAlbumMetadataInput">
+            <a href="updatealbummetadatainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateAlbumMetadataInput
+            </a>
+        </li>
+        <li  title="UpdateArtistAppleEidInput">
+            <a href="updateartistappleeidinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateArtistAppleEidInput
+            </a>
+        </li>
+        <li  title="UpdateArtistInput">
+            <a href="updateartistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateArtistInput
+            </a>
+        </li>
+        <li  title="UpdateArtistSpotifyEidInput">
+            <a href="updateartistspotifyeidinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateArtistSpotifyEidInput
+            </a>
+        </li>
+        <li  title="UpdateBroadcastStatusInput">
+            <a href="updatebroadcaststatusinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateBroadcastStatusInput
+            </a>
+        </li>
+        <li  title="UpdateCategoryInput">
+            <a href="updatecategoryinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateCategoryInput
+            </a>
+        </li>
+        <li  title="UpdateComposerInput">
+            <a href="updatecomposerinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateComposerInput
+            </a>
+        </li>
+        <li  title="UpdateMediaArtistInput">
+            <a href="updatemediaartistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateMediaArtistInput
+            </a>
+        </li>
+        <li  title="UpdateMetadataInput">
+            <a href="updatemetadatainput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateMetadataInput
+            </a>
+        </li>
+        <li  title="UpdateOwnershipAndPoliciesInput">
+            <a href="updateownershipandpoliciesinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateOwnershipAndPoliciesInput
+            </a>
+        </li>
+        <li  title="UpdateRightsInput">
+            <a href="updaterightsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateRightsInput
+            </a>
+        </li>
+        <li  title="UpdateSeenFeaturesInput">
+            <a href="updateseenfeaturesinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateSeenFeaturesInput
+            </a>
+        </li>
+        <li  title="UpdateSocialSyncInput">
+            <a href="updatesocialsyncinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateSocialSyncInput
+            </a>
+        </li>
+        <li  title="UpgradeArtistsInput">
+            <a href="upgradeartistsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpgradeArtistsInput
+            </a>
+        </li>
+        <li  title="UsersCursorInput">
+            <a href="userscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UsersCursorInput
+            </a>
+        </li>
+        <li  title="UserSearch">
+            <a href="usersearch.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSearch
+            </a>
+        </li>
+        <li  title="VerifyOTPCodeInput">
+            <a href="verifyotpcodeinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                VerifyOTPCodeInput
+            </a>
+        </li>
+        <li  title="YoutubeArtistAnalyticsCursorInput">
+            <a href="youtubeartistanalyticscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeArtistAnalyticsCursorInput
+            </a>
+        </li>
+        <li  title="YoutubeConflictsCursorInput">
+            <a href="youtubeconflictscursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeConflictsCursorInput
+            </a>
+        </li>
+        <li  title="YoutubeUgcCursorInput">
+            <a href="youtubeugccursorinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeUgcCursorInput
+            </a>
+        </li>
+        <li  title="YoutubeUgcSearch">
+            <a href="youtubeugcsearch.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YoutubeUgcSearch
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">ToggleOtpMfaPayload</h1>
+        <div class="slds-text-body--regular"><p>Autogenerated return type of ToggleOtpMfa</p>
+</div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ToggleOtpMfaPayload</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A unique identifier for the client performing the mutation.</span></span></li><li><span class="tab"><span class="meta">clientMutationId</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the authenticated session indicates that the main user is observing a </span></span></li><li><span class="tab"><span class="comment line">#   sub-user, the current_observer response object will contain the observer User </span></span></li><li><span class="tab"><span class="comment line">#   object.</span></span></li><li><span class="tab"><span class="meta">current_observer</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the request is authenticated, the current_user response object will contain </span></span></li><li><span class="tab"><span class="comment line">#   the authenticated User object.</span></span></li><li><span class="tab"><span class="meta">current_user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="meta">errors</span>: [<a class="support type" href="usererror.doc.html">UserError</a>!] </span></li><li></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="mutation.doc.html" title="Mutation - The mutation root of this schema">Mutation<em>The mutation root of this schema</em></a><li></ul>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>
