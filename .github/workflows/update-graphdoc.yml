@@ -15,6 +15,7 @@ jobs:
         with:
           cmd: generate-graphdoc
       - run: |
+          echo ${{secrets.GITHUB_REF}}
           git config user.email "dev@vydia.com"
           git config user.name "Vydia"
           git add .
