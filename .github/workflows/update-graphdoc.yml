@@ -19,6 +19,7 @@ jobs:
           git config user.name "Vydia"
           git add .
           git commit -m "update graphdoc"
+          echo ${GITHUB_REF#refs/heads/}
           git push origin ${GITHUB_REF#refs/heads/}
       - uses: devmasx/merge-branch@v1.4.0
         with:
