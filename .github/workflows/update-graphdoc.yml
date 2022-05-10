@@ -11,22 +11,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: generate-graphdoc
       - run: |
-          echo ${GITHUB_REF#refs/heads/}
-      # - uses: borales/actions-yarn@v2.0.0
-      #   with:
-      #     cmd: install
-      # - uses: borales/actions-yarn@v2.0.0
-      #   with:
-      #     cmd: generate-graphdoc
-      # - run: |
-      #     git config user.email "dev@vydia.com"
-      #     git config user.name "Vydia"
-      #     git add .
-      #     git commit -m "update graphdoc"
-      #     git push origin ${{secrets.GITHUB_REF}}
-      # - uses: devmasx/merge-branch@v1.4.0
-      #   with:
-      #     label_name: auto-merge ${{secrets.GITHUB_REF}}
-      #     target_branch: master
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+          git config user.email "dev@vydia.com"
+          git config user.name "Vydia"
+          git add .
+          git commit -m "update graphdoc"
+          git push origin ${GITHUB_REF#refs/heads/}
+      - uses: devmasx/merge-branch@v1.4.0
+        with:
+          label_name: auto-merge ${GITHUB_REF#refs/heads/}
+          target_branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
