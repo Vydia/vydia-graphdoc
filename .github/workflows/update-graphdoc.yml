@@ -24,5 +24,4 @@ jobs:
         with:
           label_name: auto-merge ${GITHUB_REF#refs/heads/}
           target_branch: master
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          github_token: ${{secrets.GITHUB_TOKEN}}
