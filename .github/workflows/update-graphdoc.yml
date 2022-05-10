@@ -30,10 +30,9 @@ jobs:
         with:
           token: ${{ secrets.GH_PAT }}
       - run: |
-          git pull origin HEAD --ff-only
+          git pull git pull --no-ff origin HEAD
       - uses: devmasx/merge-branch@v1.4.0
         with:
           type: now
-          from_branch: ${{ github.head_ref }}
           target_branch: master
           github_token: ${{ secrets.GH_PAT }}
