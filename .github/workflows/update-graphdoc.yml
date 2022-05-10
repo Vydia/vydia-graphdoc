@@ -19,10 +19,10 @@ jobs:
           git config user.name "Vydia"
           git add .
           git commit -m "update graphdoc"
-          git push origin ${{secrets.GITHUB_REF}}
+          git push origin ${GITHUB_REF#refs/heads/}
       - uses: devmasx/merge-branch@v1.1.0
         with:
-          label_name: auto-merge ${{secrets.GITHUB_REF}}
+          label_name: auto-merge ${GITHUB_REF#refs/heads/}
           target_branch: master
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
