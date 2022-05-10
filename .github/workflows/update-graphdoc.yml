@@ -3,9 +3,6 @@ on:
   create:
     branches:
       - '^(update-graphdoc\/.*)$'
-  push:
-    branches:
-    - 'fix-update-graphdoc-'
 jobs:
   update:
     runs-on: ubuntu-latest
