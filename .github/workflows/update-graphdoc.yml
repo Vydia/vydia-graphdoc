@@ -30,7 +30,7 @@ jobs:
         with:
           token: ${{ secrets.GH_PAT }}
       - run: |
-          git pull --no-ff origin HEAD
+          git pull --no-ff --allow-unrelated-histories origin HEAD
       - uses: devmasx/merge-branch@v1.4.0
         with:
           type: now
