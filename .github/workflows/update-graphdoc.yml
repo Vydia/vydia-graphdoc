@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PAT }}
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
@@ -20,3 +22,16 @@ jobs:
           git add .
           git commit -m "update graphdoc"
           git push origin ${GITHUB_REF#refs/heads/}
+  merge:
+    needs: [update]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PAT }}
+      - uses: devmasx/merge-branch@v1.4.0
+        with:
+          type: now
+          from_branch: ${{ github.head_ref }}
+          target_branch: master
+          github_token: ${{ secrets.GH_PAT }}
