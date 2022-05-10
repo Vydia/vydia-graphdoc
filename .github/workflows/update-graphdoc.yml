@@ -13,29 +13,23 @@ jobs:
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
-      - uses: borales/actions-yarn@v2.0.0
+      - run: |
+          git config user.email "dev@vydia.com"
+          git config user.name "Vydia"
+          git checkout -B update_graphdoc
         with:
           cmd: generate-graphdoc
       - run: |
-          git config user.email "dev@vydia.com"
-          git config user.name "Vydia"
           git add .
           git commit -m "update graphdoc"
-          git push origin HEAD
+          git push origin update_graphdoc
   merge:
-    needs: [update]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GH_PAT }}
-      - run: |
-          git config user.email "dev@vydia.com"
-          git config user.name "Vydia"
-          git pull --no-ff --allow-unrelated-histories origin HEAD
       - uses: devmasx/merge-branch@v1.4.0
         with:
           type: now
-          from_branch: ${GITHUB_REF#refs/heads/}
+          from_branch: update_graphdoc
           target_branch: master
-          github_token: ${{ secrets.GH_PAT }}
+          github_token: ${{ github.token }}
