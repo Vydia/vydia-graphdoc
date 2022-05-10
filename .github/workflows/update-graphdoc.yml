@@ -16,7 +16,8 @@ jobs:
       - run: |
           git config user.email "dev@vydia.com"
           git config user.name "Vydia"
-          git checkout -B update_graphdoc
+          git fetch
+          git checkout update_graphdoc
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: generate-graphdoc
