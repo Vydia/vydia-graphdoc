@@ -17,6 +17,7 @@ jobs:
           git config user.email "dev@vydia.com"
           git config user.name "Vydia"
           git fetch
+          git pull origin update_graphdoc
           git checkout update_graphdoc
       - uses: borales/actions-yarn@v2.0.0
         with:
