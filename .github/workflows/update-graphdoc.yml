@@ -14,7 +14,7 @@ jobs:
           yarn install
           git config user.email "dev@vydia.com"
           git config user.name "Vydia"
-          git fetch
+          git fetch origin update_graphdoc
           git checkout update_graphdoc
           yarn generate-graphdoc
           git add .
