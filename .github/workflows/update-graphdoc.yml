@@ -2,7 +2,7 @@ name: Generate and Update Graphdoc
 on:
   create:
     branches:
-      - '^(update-graphdoc\/.*)$'
+      - 'update-graphdoc/*'
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -19,10 +19,9 @@ jobs:
           git config user.name "Vydia"
           git add .
           git commit -m "update graphdoc"
-          git push origin ${{secrets.GITHUB_REF}}
-      - uses: devmasx/merge-branch@v1.1.0
+          git push origin ${GITHUB_REF#refs/heads/}
+      - uses: devmasx/merge-branch@v1.4.0
         with:
-          label_name: auto-merge ${{secrets.GITHUB_REF}}
+          type: now
           target_branch: master
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          github_token: ${{secrets.GITHUB_TOKEN}}
