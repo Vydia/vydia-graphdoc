@@ -10,9 +10,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo ${{GITHUB_REF}}
       - uses: actions/checkout@v2
+      - run: |
+          echo ${GITHUB_REF}
       # - uses: borales/actions-yarn@v2.0.0
       #   with:
       #     cmd: install
