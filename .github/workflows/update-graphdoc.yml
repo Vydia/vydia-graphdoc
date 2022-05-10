@@ -23,5 +23,5 @@ jobs:
       - uses: devmasx/merge-branch@v1.4.0
         with:
           type: now
-          target_branch: master
+          target_branch: fixing-graphdoc-gh-actions
           github_token: ${{secrets.GITHUB_TOKEN}}
