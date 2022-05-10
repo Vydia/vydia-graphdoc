@@ -7,6 +7,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
+      - run: |
+          echo ${{secrets.GITHUB_REF}}
       - uses: actions/checkout@v2
       - uses: borales/actions-yarn@v2.0.0
         with:
@@ -15,13 +17,12 @@ jobs:
         with:
           cmd: generate-graphdoc
       - run: |
-          echo ${{secrets.GITHUB_REF}}
           git config user.email "dev@vydia.com"
           git config user.name "Vydia"
           git add .
           git commit -m "update graphdoc"
           git push origin ${{secrets.GITHUB_REF}}
-      - uses: devmasx/merge-branch@v1.1.0
+      - uses: devmasx/merge-branch@v1.4.0
         with:
           label_name: auto-merge ${{secrets.GITHUB_REF}}
           target_branch: master
