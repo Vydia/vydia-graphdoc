@@ -20,7 +20,7 @@ jobs:
           git add .
           git commit -m "update graphdoc"
           git push origin ${GITHUB_REF#refs/heads/}
-      - uses: devmasx/merge-branch@v1.1.0
+      - uses: devmasx/merge-branch@v1.4.0
         with:
           label_name: auto-merge ${GITHUB_REF#refs/heads/}
           target_branch: master
