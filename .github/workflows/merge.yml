@@ -5,6 +5,7 @@ on:
       - 'update-graphdoc/*'
 jobs:
   merge:
+    if: "contains(github.event.head_commit.message, 'update')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
