@@ -21,7 +21,7 @@ jobs:
           git config user.name "Vydia"
           git add .
           git commit -m "update graphdoc"
-          git push origin ${GITHUB_REF#refs/heads/}
+          git push origin HEAD
   merge:
     needs: [update]
     runs-on: ubuntu-latest
@@ -29,6 +29,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GH_PAT }}
+        run: git pull origin HEAD
       - uses: devmasx/merge-branch@v1.4.0
         with:
           type: now
