@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          echo ${GITHUB_REF}
+          echo ${GITHUB_REF#refs/heads/}
       # - uses: borales/actions-yarn@v2.0.0
       #   with:
       #     cmd: install
